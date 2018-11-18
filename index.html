@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title name="Main">CPI</title>
+    <link rel="icon" href="images/UniLogo_64x64.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav id="navTitle" class="nav-title">
+        <h1 id="title" class="title" onclick="mainClick(this)"><a>CPI</a></h1>
+        <input type="checkbox" id="navToggle" class="nav-toggle">
+        <div id="conTitle" class="con-title">
+            <ul id="mainMenu" class="main-menu">
+                <li id="ABC" class="item0" onclick="mainClick(this)"><a>abc</a></li>
+                <li id="H" class="item1" onclick="mainClick(this)"><a>Cámera</a></li>
+                <li id="G" class="item2" onclick="mainClick(this)"><a>Gobernador</a></li>
+                <li id="S" class="item3" onclick="mainClick(this)"><a>Senado</a></li>
+                <!--<li id="I" class="item4" onclick="mainClick(this)"><a>Ballot Initiative</a></li>-->
+                <!--<li id="P" class="item5" onclick="mainClick(this)"><a>Presidential</a></li>-->
+            </ul>
+        </div>
+        <label for="navToggle" id="navToggleLabel" class="nav-toggle-label"><span></span></label>
+        <div id="raceToggle" class="race-toggle">
+            <button onclick="toggleAllRaces('none')" id="btnHide" class="btn-toggle">[-]</button>
+            <button onclick="toggleAllRaces('Block')" id="btnShow" class="btn-toggle">[+]</button>
+        </div>
+    </nav>
+</body>
+
+</html>
