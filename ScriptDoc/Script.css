@@ -1,7 +1,7 @@
-body, table, div, p
-{
+body, table, div, p {
     font-family: Lucida Grande, Verdana, Geneva, Arial, sans-serif;
     font-size: 12px;
+    background-color: #ffffff;
 }
 
 h1
