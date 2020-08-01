@@ -1,7 +1,7 @@
 body, table, div, p {
     font-family: Lucida Grande, Verdana, Geneva, Arial, sans-serif;
     font-size: 12px;
-    background-color: #1537aa;
+    background-color: #e8fcfc;
 }
 
 h1
@@ -28,6 +28,7 @@ h3
 .dyntree {
     font-family: sans-serif;
     margin: 0.5em;
+    background-color: #1537aa;
 }
 
 
