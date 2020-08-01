@@ -1,0 +1,27 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>NAME</h1>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td>-</td>
+    <td>Get the base name of the clip the capture channel is currently writing to.</td>
+  </tr>
+  <tr>
+    <th>PLACEHOLDER_GET</th>
+    <td>-</td>
+    <td>Get the base name placeholder of the clip.</td>
+  </tr>
+  <tr>
+    <th>PLACEHOLDER_SET</th>
+    <td><i>FileName</i>&nbsp;$(clip_name) = <br>    </td>    <td>Set the clip base name placeholder. Any occurence of $(clip_name) in the SET command. will be replaced by this value.</td>
+  </tr>
+  <tr>
+    <th>SET</th>
+    <td><i>FileName</i>&nbsp;ClipName = <br><i>Float</i>&nbsp;Growing Files Update Interval = 0.000000<br>    </td>    <td>Set the clip base name.  The extension(s) will be added to the clip name automatically. Setting a clip name while another clip is captured results in undetermined state.</td>
+  </tr>
+</table>
+</body></html>

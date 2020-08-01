@@ -1,0 +1,263 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>SCENETREE</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ACCUM_TRANS_MOVE</th>
+    <td><i>PObject</i>&nbsp;source<br><i>PObject</i>&nbsp;dest.<br><i>Enum</i>&nbsp;where<br>
+      &nbsp;&nbsp;BOTTOM<br>
+      &nbsp;&nbsp;DOWN<br>
+      &nbsp;&nbsp;LEFT<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+      &nbsp;&nbsp;RIGHT<br>
+      &nbsp;&nbsp;TOP<br>
+      &nbsp;&nbsp;UP<br>
+<br>    </td>    <td>Move a container in the tree preserving its transformation</td>
+  </tr>
+  <tr>
+    <th>ADD</th>
+    <td><i>Enum</i>&nbsp;where = BOTTOM<br>
+      &nbsp;&nbsp;BOTTOM<br>
+      &nbsp;&nbsp;DOWN<br>
+      &nbsp;&nbsp;LEFT<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+      &nbsp;&nbsp;RIGHT<br>
+      &nbsp;&nbsp;TOP<br>
+      &nbsp;&nbsp;UP<br>
+<br><i>PObject</i>&nbsp;container = <br>    </td>    <td>Add a container to the tree</td>
+  </tr>
+  <tr>
+    <th>COLLAPSE</th>
+    <td>-</td>
+    <td>Close all containers, so only the root level containers are visible</td>
+  </tr>
+  <tr>
+    <th>COPY</th>
+    <td><i>PObject</i>&nbsp;source<br><i>PObject</i>&nbsp;dest.<br><i>Enum</i>&nbsp;where<br>
+      &nbsp;&nbsp;BOTTOM<br>
+      &nbsp;&nbsp;DOWN<br>
+      &nbsp;&nbsp;LEFT<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+      &nbsp;&nbsp;RIGHT<br>
+      &nbsp;&nbsp;TOP<br>
+      &nbsp;&nbsp;UP<br>
+<br>    </td>    <td>Copy a container in the tree</td>
+  </tr>
+  <tr>
+    <th>COUNT_REN_TIME</th>
+    <td>-</td>
+    <td>Count the render time of the containers</td>
+  </tr>
+  <tr>
+    <th>DELETE</th>
+    <td><i>PObject</i>&nbsp;container = <br><i>Enum</i>&nbsp;<br>
+      &nbsp;&nbsp;ALL<br>
+<br>    </td>    <td>Delete a container from the tree</td>
+  </tr>
+  <tr>
+    <th>DELETE_CONTAINERS</th>
+    <td><i>ArgList</i>&nbsp;container_locations<br>    </td>    <td>Delete one ore more containers (including sub-containers)</td>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td><i>PObject</i>&nbsp;container = <br><i>Bool</i>&nbsp;get_details = 0<br><i>Bool</i>&nbsp;only_one_root = 0<br>    </td>    <td>Get the container tree structure</td>
+  </tr>
+  <tr>
+    <th>GET_COMMON_ROOT_CONTAINER</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET_ENCLOSING_OBJECT</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET_EX</th>
+    <td><i>Bool</i>&nbsp;get_all_containers = 0<br><i>Bool</i>&nbsp;get_details = 0<br><i>Bool</i>&nbsp;only_one_root = 0<br>    </td>    <td>Get the container tree structure including GUI color information. A flag can be specified to return all containers, not just the open ones.</td>
+  </tr>
+  <tr>
+    <th>GET_SEARCH_RESULT</th>
+    <td>-</td>
+    <td>Get the result of the last search command</td>
+  </tr>
+  <tr>
+    <th>GET_STATISTICS</th>
+    <td>-</td>
+    <td>Get the result of the statistics</td>
+  </tr>
+  <tr>
+    <th>GROUP</th>
+    <td><i>ArgList</i>&nbsp;container_locations<br>    </td>    <td>Groups the specified containers into a new common parent container.</td>
+  </tr>
+  <tr>
+    <th>HIDE_ALL</th>
+    <td>-</td>
+    <td>Make all containers of the tree invisible</td>
+  </tr>
+  <tr>
+    <th>LOCK_ALL</th>
+    <td>-</td>
+    <td>Lock all containers of the tree</td>
+  </tr>
+  <tr>
+    <th>MOVE</th>
+    <td><i>PObject</i>&nbsp;source<br><i>PObject</i>&nbsp;dest.<br><i>Enum</i>&nbsp;where<br>
+      &nbsp;&nbsp;BOTTOM<br>
+      &nbsp;&nbsp;DOWN<br>
+      &nbsp;&nbsp;LEFT<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+      &nbsp;&nbsp;RIGHT<br>
+      &nbsp;&nbsp;TOP<br>
+      &nbsp;&nbsp;UP<br>
+<br>    </td>    <td>Move a container in the tree</td>
+  </tr>
+  <tr>
+    <th>OPEN</th>
+    <td>-</td>
+    <td>Show the containers under a given container</td>
+  </tr>
+  <tr>
+    <th>OPEN_ALL</th>
+    <td><i>PObject</i>&nbsp;container<br>    </td>    <td>Open all containers, so all containers of the tree are visible</td>
+  </tr>
+  <tr>
+    <th>OPEN_FOLDER</th>
+    <td><i>PObject</i>&nbsp;container<br><i>Bool</i>&nbsp;open<br>    </td>    <td>Open all containers under the given container</td>
+  </tr>
+  <tr>
+    <th>RESET_RESULTS</th>
+    <td>-</td>
+    <td>Reset the result of the last search or statistics command</td>
+  </tr>
+  <tr>
+    <th>SEARCH</th>
+    <td><i>Enum</i>&nbsp;<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;FIRST<br>
+      &nbsp;&nbsp;LAST<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+<br><i>String</i>&nbsp;container.name<br>    </td>    <td>Search a container by name</td>
+  </tr>
+  <tr>
+    <th>SEARCH_ALL_BY_PARAMETER</th>
+    <td><i>ArgList</i>&nbsp;expression<br>    </td>    <td>Search for containers by a specific parameter and return container ids. Consider merged objects.</td>
+  </tr>
+  <tr>
+    <th>SEARCH_FOR_CONTAINER_WITH_PROPERTY</th>
+    <td><i>String</i>&nbsp;property<br><i>String</i>&nbsp;location = ""<br>    </td>    <td>Search for containers by a specific property and return container ids. Consider merged objects.</td>
+  </tr>
+  <tr>
+    <th>SEARCH_FOR_PROPERTY</th>
+    <td><i>String</i>&nbsp;property<br><i>String</i>&nbsp;location = ""<br>    </td>    <td>Search for containers by a specific property and return container ids. Ignore merged objects.</td>
+  </tr>
+  <tr>
+    <th>SEARCH_IN_SCRIPTS</th>
+    <td><i>Enum</i>&nbsp;<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;FIRST<br>
+      &nbsp;&nbsp;LAST<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+<br><i>String</i>&nbsp;searched_string<br>    </td>    <td>Search for a string (not regex) in every script. Works as any other search command. Returns the number of matching containers</td>
+  </tr>
+  <tr>
+    <th>SEARCH_ONE_BY_PARAMETER</th>
+    <td><i>Enum</i>&nbsp;<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;FIRST<br>
+      &nbsp;&nbsp;LAST<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+<br><i>ArgList</i>&nbsp;expression<br>    </td>    <td>Search a container by parameter</td>
+  </tr>
+  <tr>
+    <th>SEARCH_PROPERTY</th>
+    <td><i>Enum</i>&nbsp;<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;FIRST<br>
+      &nbsp;&nbsp;LAST<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+<br><i>String</i>&nbsp;property<br><i>String</i>&nbsp;location = ""<br>    </td>    <td>Search a container by property</td>
+  </tr>
+  <tr>
+    <th>SEARCH_RESET</th>
+    <td>-</td>
+    <td>Reset the result of the last search command</td>
+  </tr>
+  <tr>
+    <th>SEARCH_SELECT_ALL</th>
+    <td>-</td>
+    <td>Select all containers that were found by the last search command</td>
+  </tr>
+  <tr>
+    <th>SELECT_COLOR</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>Get all containers with the specified color-index or -indices.</td>
+  </tr>
+  <tr>
+    <th>SHOW_ALL</th>
+    <td>-</td>
+    <td>Make all containers of the tree visible</td>
+  </tr>
+  <tr>
+    <th>UNGROUP</th>
+    <td><i>PObject</i>&nbsp;container<br>    </td>    <td>Ungroup the containers</td>
+  </tr>
+  <tr>
+    <th>UNLOCK_ALL</th>
+    <td>-</td>
+    <td>Unlock all containers of the tree</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th><a href='classCONTAINER.html'>$</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCONTAINER.html'>%1</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCONTAINER.html'>/%1</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVControlChannel.html'>@</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTROL_CHANNEL</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DATA</th>
+    <td><a href='propSCENETREE_DATA.html'>GET</a><br></td>
+    <td>Get the container tree structure</td>
+  </tr>
+  <tr>
+    <th><a href='classCVSelection.html'>SELECTION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>UNIQUE</th>
+    <td><a href='propSCENETREE_UNIQUE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

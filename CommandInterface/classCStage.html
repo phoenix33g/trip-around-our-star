@@ -1,0 +1,356 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CStage</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD</th>
+    <td><i>String</i>&nbsp;directorName<br>    </td>    <td>add a new director</td>
+  </tr>
+  <tr>
+    <th>ADD_CONTAINER</th>
+    <td><i>PObject</i>&nbsp;<br><i>Int</i>&nbsp;index<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>ADD_KEYFRAME_TO_CURRENT_CHANNEL</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLOSE_TREE</th>
+    <td>-</td>
+    <td>closes the complete tree</td>
+  </tr>
+  <tr>
+    <th>CONTINUE</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>continue the animation</td>
+  </tr>
+  <tr>
+    <th>CONTINUE_IGNORE_NEXT_STOP</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>continue the animation</td>
+  </tr>
+  <tr>
+    <th>CONTINUE_NOSTOP</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>continue the animation without stops</td>
+  </tr>
+  <tr>
+    <th>CONVERT_GLOBAL_TO_OBJECT</th>
+    <td><i>Timecode</i>&nbsp;<unknown><br><i>PObject</i>&nbsp;anim_container<br>    </td>    <td>convert stage time to container time</td>
+  </tr>
+  <tr>
+    <th>CONVERT_OBJECT_TO_GLOBAL</th>
+    <td><i>Timecode</i>&nbsp;<unknown><br><i>PObject</i>&nbsp;anim_container<br>    </td>    <td>convert container time to stage time</td>
+  </tr>
+  <tr>
+    <th>COPY_DIRECTOR</th>
+    <td><i>PObject</i>&nbsp;source_dir<br><i>PObject</i>&nbsp;dest_dir<br><i>Enum</i>&nbsp;where<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br><i>Int</i>&nbsp; = 1<br><i>String</i>&nbsp;new_dir_name = ""<br>    </td>    <td>Copies a director. Possible locations: UNDER, AFTER or BEFORE destination director</td>
+  </tr>
+  <tr>
+    <th>DELETE_DIRECTOR</th>
+    <td><i>PObject</i>&nbsp;director<br>    </td>    <td>deletes the specified director</td>
+  </tr>
+  <tr>
+    <th>DELETE_SELECTED_KEYFRAMES</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td><i>Enum</i>&nbsp; = ALL<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;DIRECTOR_TREE<br>
+<br>    </td>    <td>get the director- and channel-tree</td>
+  </tr>
+  <tr>
+    <th>GET_ALL_DIRECTORS</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET_TOPLEVEL_DIRECTORS</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GOTO_NEXT_CONTAINER_KEYFRAME</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GOTO_PREVIOUS_CONTAINER_KEYFRAME</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MOVE_MODE</th>
+    <td><i>String</i>&nbsp;<br><i>String</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>OPEN_TREE</th>
+    <td>-</td>
+    <td>opens the complete tree</td>
+  </tr>
+  <tr>
+    <th>POPUP_SELECT</th>
+    <td><i>Int</i>&nbsp;index<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>SEARCH_KEYFRAME</th>
+    <td><i>String</i>&nbsp;keyframeName<br>    </td>    <td>Search for a keyframe by name</td>
+  </tr>
+  <tr>
+    <th>SEARCH_KEYFRAME_RESULT</th>
+    <td><i>Enum</i>&nbsp; = NEXT<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;FIRST<br>
+      &nbsp;&nbsp;LAST<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+<br>    </td>    <td>Retrieve next keyframe found by SEARCH_KEYFRAME</td>
+  </tr>
+  <tr>
+    <th>SET_CURRENT</th>
+    <td><i>PObject</i>&nbsp;director<br>    </td>    <td>sets the current director</td>
+  </tr>
+  <tr>
+    <th>SET_KEY</th>
+    <td><i>Int</i>&nbsp;increment = 0<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>SHOW</th>
+    <td><i>ArgList</i>&nbsp;timeString<br>    </td>    <td>set the timeline to the specified value</td>
+  </tr>
+  <tr>
+    <th>SHOW_POST</th>
+    <td><i>ArgList</i>&nbsp;timeString<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>START</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>start the animation</td>
+  </tr>
+  <tr>
+    <th>START_NOSTOP</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>start the animation without stops</td>
+  </tr>
+  <tr>
+    <th>STOP</th>
+    <td>-</td>
+    <td>stop the animation</td>
+  </tr>
+  <tr>
+    <th>STOP_SELECTED_DIRECTORS</th>
+    <td>-</td>
+    <td>stop animation of all selected directors</td>
+  </tr>
+  <tr>
+    <th>TO_END</th>
+    <td>-</td>
+    <td>set time marker to beginning of current director</td>
+  </tr>
+  <tr>
+    <th>TO_START</th>
+    <td>-</td>
+    <td>set time marker to beginning of current director</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th><a href='classCDirectorTree.html'>$</a></th>
+    <td></td>
+    <td>access director by name path</td>
+  </tr>
+  <tr>
+    <th><a href='classCDirectorTree.html'>/</a></th>
+    <td></td>
+    <td>access director by director path</td>
+  </tr>
+  <tr>
+    <th>ANIMATION</th>
+    <td>GET_DIRECTOR_DATA<br></td>
+    <td>for 2.7 compatibility</td>
+  </tr>
+  <tr>
+    <th>CONVERT_STOPS_TO_PAUSES</th>
+    <td>GET<br><a href='propCStage_CONVERT_STOPS_TO_PAUSES.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CURRENT_DIRECTOR</th>
+    <td><a href='propCStage_CURRENT_DIRECTOR.html'>GET</a><br><a href='propCStage_CURRENT_DIRECTOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DEFAULT_DIRECTOR</th>
+    <td><a href='propCStage_DEFAULT_DIRECTOR.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DIRECTOR</th>
+    <td><a href='propCStage_DIRECTOR.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCDirectorTree.html'>DIRECTOR*</a></th>
+    <td></td>
+    <td>access director by name path</td>
+  </tr>
+  <tr>
+    <th><a href='classCDirectorTree.html'>DIRECTOR*/</a></th>
+    <td></td>
+    <td>access director by director path</td>
+  </tr>
+  <tr>
+    <th>DIRECTOR_LIST</th>
+    <td><a href='propCStage_DIRECTOR_LIST.html'>ADD_SELECT</a><br><a href='propCStage_DIRECTOR_LIST.html'>ALL_SELECT</a><br><a href='propCStage_DIRECTOR_LIST.html'>GET_ALL_SELECT</a><br><a href='propCStage_DIRECTOR_LIST.html'>GET_SELECT</a><br><a href='propCStage_DIRECTOR_LIST.html'>SELECT</a><br></td>
+    <td>the director list</td>
+  </tr>
+  <tr>
+    <th>DIRECTOR_LIST*ACTIVE_SLOT</th>
+    <td>GET<br><a href='propCStage_DIRECTOR_LIST.ACTIVE_SLOT.html'>SET</a><br></td>
+    <td>The currently active slot,</td>
+  </tr>
+  <tr>
+    <th>DURATION</th>
+    <td>GET<br><a href='propCStage_DURATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DURATION_ACTIVE</th>
+    <td>GET<br><a href='propCStage_DURATION_ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EDITED_OBJECT</th>
+    <td><a href='propCStage_EDITED_OBJECT.html'>IS_VALID</a><br></td>
+    <td>the object edited in the animation object editor</td>
+  </tr>
+  <tr>
+    <th>END_TIME</th>
+    <td><a href='propCStage_END_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INNER_END_TIME</th>
+    <td><a href='propCStage_INNER_END_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INNER_START_TIME</th>
+    <td><a href='propCStage_INNER_START_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOCK_DIRECTOR_MENU</th>
+    <td><a href='propCStage_LOCK_DIRECTOR_MENU.html'>GET</a><br><a href='propCStage_LOCK_DIRECTOR_MENU.html'>SET</a><br></td>
+    <td>the lock director menu</td>
+  </tr>
+  <tr>
+    <th>OUTER_END_TIME</th>
+    <td><a href='propCStage_OUTER_END_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OUTER_START_TIME</th>
+    <td><a href='propCStage_OUTER_START_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SELECTED_CHANNELS</th>
+    <td><a href='propCStage_SELECTED_CHANNELS.html'>MOVE_BY_OFFSET</a><br><a href='propCStage_SELECTED_CHANNELS.html'>MOVE_TO</a><br><a href='propCStage_SELECTED_CHANNELS.html'>SCALE_BY_FACTOR</a><br><a href='propCStage_SELECTED_CHANNELS.html'>SCALE_TO_LENGTH</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SELECTED_CHANNELS*INTERPOLATION_MODE</th>
+    <td><a href='propCStage_SELECTED_CHANNELS.INTERPOLATION_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SELECTED_KEYFRAMES</th>
+    <td><a href='propCStage_SELECTED_KEYFRAMES.html'>DELETE</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SELECTED_KEYFRAMES*INTERPOLATION_MODE</th>
+    <td><a href='propCStage_SELECTED_KEYFRAMES.INTERPOLATION_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SHOWMODE</th>
+    <td>GET<br><a href='propCStage_SHOWMODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>START_TIME</th>
+    <td><a href='propCStage_START_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>STOP_TO_PAUSE_TIME</th>
+    <td><a href='propCStage_STOP_TO_PAUSE_TIME.html'>COMPUTE</a><br>GET<br><a href='propCStage_STOP_TO_PAUSE_TIME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TIMELINE*DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TREE</th>
+    <td><a href='propCStage_TREE.html'>ADD_DIRECTOR</a><br><a href='propCStage_TREE.html'>ADD_SELECT_ENTRY</a><br><a href='propCStage_TREE.html'>CLOSE_ENTRY</a><br><a href='propCStage_TREE.html'>COPY_ENTRIES</a><br><a href='propCStage_TREE.html'>COPY_ENTRY</a><br><a href='propCStage_TREE.html'>DELETE_ENTRIES</a><br><a href='propCStage_TREE.html'>DELETE_ENTRY</a><br><a href='propCStage_TREE.html'>GET_POPUP_INFO</a><br><a href='propCStage_TREE.html'>GROUP_DIRECTORS</a><br><a href='propCStage_TREE.html'>MOVE_CONTAINER_SELECTION</a><br><a href='propCStage_TREE.html'>MOVE_ENTRIES</a><br><a href='propCStage_TREE.html'>MOVE_ENTRY</a><br><a href='propCStage_TREE.html'>OPEN_ENTRY</a><br><a href='propCStage_TREE.html'>OPEN_TREE</a><br><a href='propCStage_TREE.html'>SELECT_ENTRY</a><br><a href='propCStage_TREE.html'>UNGROUP_DIRECTORS</a><br></td>
+    <td>the stage tree</td>
+  </tr>
+  <tr>
+    <th>TREE*CHANNEL</th>
+    <td><a href='propCStage_TREE.CHANNEL.html'>GET_BY_ID</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TREE*CONTAINER</th>
+    <td><a href='propCStage_TREE.CONTAINER.html'>GET</a><br><a href='propCStage_TREE.CONTAINER.html'>GET_BY_ID</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TREE*DIRECTOR</th>
+    <td><a href='propCStage_TREE.DIRECTOR.html'>GET</a><br><a href='propCStage_TREE.DIRECTOR.html'>GET_BY_ID</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TREE*OFFSET</th>
+    <td><a href='propCStage_TREE.OFFSET.html'>GET</a><br><a href='propCStage_TREE.OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>USE_SELECT_DIRECTORLIST</th>
+    <td>GET<br><a href='propCStage_USE_SELECT_DIRECTORLIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

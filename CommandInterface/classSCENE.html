@@ -1,0 +1,623 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>SCENE</h1>
+<p>Inherits: <a href='classCPoolObj.html'>CPoolObj</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>CUE</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET_CONTAINERS_FOR_FONT</th>
+    <td><i>String</i>&nbsp;font_name<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>IS_BGL_COMPATIBLE</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PREVIEW</th>
+    <td><i>Bool</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>REPLACE_BG_FONT</th>
+    <td><i>String</i>&nbsp;font_name<br><i>String</i>&nbsp;new_font_location<br><i>String</i>&nbsp;source_location = ""<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>REPLACE_FG_FONT</th>
+    <td><i>String</i>&nbsp;font_name<br><i>String</i>&nbsp;new_font_location<br><i>String</i>&nbsp;source_location = ""<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>SEARCH_IN_SCRIPT</th>
+    <td><i>String</i>&nbsp;searched_string<br>    </td>    <td>Search for a string scene script.</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>AO*MODE</th>
+    <td>GET<br><a href='propSCENE_AO.MODE.html'>SET</a><br></td>
+    <td>Set or Get the motion blur mode</td>
+  </tr>
+  <tr>
+    <th><a href='classSSAO.html'>AO*SSAO</a></th>
+    <td></td>
+    <td>AO</td>
+  </tr>
+  <tr>
+    <th><a href='classPOSXYZ.html'>AUTO_KEY_POS</a></th>
+    <td></td>
+    <td>This object controls the auto key function</td>
+  </tr>
+  <tr>
+    <th><a href='classTEXTURE.html'>AUX*IMAGE</a></th>
+    <td>RESET<br></td>
+    <td>Clear the aux-render image</td>
+  </tr>
+  <tr>
+    <th>AUX*IMAGE*ACTIVE</th>
+    <td>GET<br><a href='propSCENE_AUX.IMAGE.ACTIVE.html'>SET</a><br></td>
+    <td>Is the aux-render image active</td>
+  </tr>
+  <tr>
+    <th>BACKGROUND*ALPHA</th>
+    <td>GET<br><a href='propSCENE_BACKGROUND.ALPHA.html'>SET</a><br></td>
+    <td>What is the default alpha value after clear screen</td>
+  </tr>
+  <tr>
+    <th><a href='classMaterial.html'>BACKGROUND*COLOR</a></th>
+    <td></td>
+    <td>Color of the background</td>
+  </tr>
+  <tr>
+    <th><a href='classTEXTURE.html'>BACKGROUND*IMAGE</a></th>
+    <td>GET<br>RESET<br><a href='propSCENE_BACKGROUND.IMAGE.html'>SET</a><br></td>
+    <td>Clear the background image</td>
+  </tr>
+  <tr>
+    <th>BACKGROUND*IMAGE*ACTIVE</th>
+    <td>GET<br><a href='propSCENE_BACKGROUND.IMAGE.ACTIVE.html'>SET</a><br></td>
+    <td>Is the background image active</td>
+  </tr>
+  <tr>
+    <th><a href='classRendercamera.html'>CAMERA%1</a></th>
+    <td></td>
+    <td>Cameras in the scene</td>
+  </tr>
+  <tr>
+    <th>CAMERA*DATA</th>
+    <td>GET<br></td>
+    <td>Get the data of all cameras of the scene with a single command</td>
+  </tr>
+  <tr>
+    <th>CAMERA_ASPECT</th>
+    <td>GET<br><a href='propSCENE_CAMERA_ASPECT.html'>SET</a><br></td>
+    <td>The camera aspect</td>
+  </tr>
+  <tr>
+    <th>CAMERA_FAR</th>
+    <td>GET<br><a href='propSCENE_CAMERA_FAR.html'>SET</a><br></td>
+    <td>The far value of the camera space. No object in behind the far value will be visible.</td>
+  </tr>
+  <tr>
+    <th>CAMERA_NEAR</th>
+    <td>GET<br><a href='propSCENE_CAMERA_NEAR.html'>SET</a><br></td>
+    <td>The near value of the camera space. No object in front of the near value will be visible.</td>
+  </tr>
+  <tr>
+    <th>CHROMATIC_ABBERATION*ACTIVE</th>
+    <td>GET<br><a href='propSCENE_CHROMATIC_ABBERATION.ACTIVE.html'>SET</a><br></td>
+    <td>Set or Get the chromatic abberation mode</td>
+  </tr>
+  <tr>
+    <th>CHROMATIC_ABBERATION*BLUE_OFFSET</th>
+    <td>GET<br><a href='propSCENE_CHROMATIC_ABBERATION.BLUE_OFFSET.html'>SET</a><br></td>
+    <td>Set or Get the chromatic abberation blue offset</td>
+  </tr>
+  <tr>
+    <th>CHROMATIC_ABBERATION*GREEN_OFFSET</th>
+    <td>GET<br><a href='propSCENE_CHROMATIC_ABBERATION.GREEN_OFFSET.html'>SET</a><br></td>
+    <td>Set or Get the chromatic abberation green offset</td>
+  </tr>
+  <tr>
+    <th>CHROMATIC_ABBERATION*RED_OFFSET</th>
+    <td>GET<br><a href='propSCENE_CHROMATIC_ABBERATION.RED_OFFSET.html'>SET</a><br></td>
+    <td>Set or Get the chromatic abberation red offset</td>
+  </tr>
+  <tr>
+    <th><a href='classClipper.html'>CLIPPER%1</a></th>
+    <td></td>
+    <td>Clipper</td>
+  </tr>
+  <tr>
+    <th>CLIPPER*DATA</th>
+    <td>GET<br></td>
+    <td>Get data of all clipper objects.</td>
+  </tr>
+  <tr>
+    <th>COLOR_CORRECTION_BIAS</th>
+    <td>GET<br><a href='propSCENE_COLOR_CORRECTION_BIAS.html'>SET</a><br></td>
+    <td>color correction bias</td>
+  </tr>
+  <tr>
+    <th>COLOR_CORRECTION_SCALE</th>
+    <td>GET<br><a href='propSCENE_COLOR_CORRECTION_SCALE.html'>SET</a><br></td>
+    <td>color correction scale</td>
+  </tr>
+  <tr>
+    <th>CONTAINERSCRIPTS</th>
+    <td>COMPILE_ALL<br>COMPILE_SCENEINDEPENDENT<br>STOP_ALL<br>STOP_SCENEINDEPENDENT<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVControlTree.html'>CONTROL</a></th>
+    <td></td>
+    <td>Access sub-location by a previously defined control name</td>
+  </tr>
+  <tr>
+    <th>CULLING</th>
+    <td>GET<br><a href='propSCENE_CULLING.html'>SET</a><br></td>
+    <td>Not used</td>
+  </tr>
+  <tr>
+    <th>CURRENT_CAMERA</th>
+    <td>GET<br><a href='propSCENE_CURRENT_CAMERA.html'>SET</a><br></td>
+    <td>This current camera</td>
+  </tr>
+  <tr>
+    <th>DEFAULT_CAMERA</th>
+    <td>GET<br><a href='propSCENE_DEFAULT_CAMERA.html'>SET</a><br></td>
+    <td>This camera is active when the scene is loaded</td>
+  </tr>
+  <tr>
+    <th>DEFOCUS_BLUR</th>
+    <td>GET<br><a href='propSCENE_DEFOCUS_BLUR.html'>SET</a><br></td>
+    <td>the blur factor applied to bg scenes when defocus is active</td>
+  </tr>
+  <tr>
+    <th>DEFOCUS_MODE</th>
+    <td>GET<br><a href='propSCENE_DEFOCUS_MODE.html'>SET</a><br></td>
+    <td>Setting the defocus mode</td>
+  </tr>
+  <tr>
+    <th><a href='classTEXTURE.html'>DEPTH*IMAGE</a></th>
+    <td><a href='propSCENE_DEPTH.IMAGE.html'>RESET</a><br></td>
+    <td>Access the depth image</td>
+  </tr>
+  <tr>
+    <th>DEPTH*IMAGE*ACTIVE</th>
+    <td>GET<br><a href='propSCENE_DEPTH.IMAGE.ACTIVE.html'>SET</a><br></td>
+    <td>Is the depth image active</td>
+  </tr>
+  <tr>
+    <th>DEPTH_BUFFER</th>
+    <td>GET<br><a href='propSCENE_DEPTH_BUFFER.html'>SET</a><br></td>
+    <td>Obsolete: use DEPTH_BUFFER_STATE instead</td>
+  </tr>
+  <tr>
+    <th>DEPTH_BUFFER_STATE</th>
+    <td>GET<br><a href='propSCENE_DEPTH_BUFFER_STATE.html'>SET</a><br></td>
+    <td>Should we use the depth buffer for rendering</td>
+  </tr>
+  <tr>
+    <th>EDITED_OBJECT</th>
+    <td>GET<br><a href='propSCENE_EDITED_OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EDITED_OBJECTS</th>
+    <td>GET<br><a href='propSCENE_EDITED_OBJECTS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EDITED_PATH_HANDLE</th>
+    <td>GET<br><a href='propSCENE_EDITED_PATH_HANDLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ENABLE_SHADOWS</th>
+    <td>GET<br><a href='propSCENE_ENABLE_SHADOWS.html'>SET</a><br></td>
+    <td>Are we allowed to render shadows in the scene</td>
+  </tr>
+  <tr>
+    <th>EXTRA_INFO</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FLICKER_FILTER</th>
+    <td>GET<br><a href='propSCENE_FLICKER_FILTER.html'>SET</a><br></td>
+    <td>Flicker filter value</td>
+  </tr>
+  <tr>
+    <th>FORCE_DRAW_OUTLINE</th>
+    <td>GET<br><a href='propSCENE_FORCE_DRAW_OUTLINE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classTEXTURE.html'>FOREGROUND*IMAGE</a></th>
+    <td>RESET<br></td>
+    <td>Clear the foreground image</td>
+  </tr>
+  <tr>
+    <th>FOREGROUND*IMAGE*ACTIVE</th>
+    <td>GET<br><a href='propSCENE_FOREGROUND.IMAGE.ACTIVE.html'>SET</a><br></td>
+    <td>Is the foreground image active</td>
+  </tr>
+  <tr>
+    <th>FRAME_RATE</th>
+    <td>GET<br><a href='propSCENE_FRAME_RATE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classFUNCTION.html'>FUNCTION</a></th>
+    <td></td>
+    <td>Functionplugins that are assigned to the scene</td>
+  </tr>
+  <tr>
+    <th>GAMMA</th>
+    <td>GET<br><a href='propSCENE_GAMMA.html'>SET</a><br></td>
+    <td>gamma value</td>
+  </tr>
+  <tr>
+    <th><a href='classCVGfxChannel.html'>GFX*%1</a></th>
+    <td></td>
+    <td>Graphics channels available</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX</th>
+    <td>GEORADIOSITY<br>RECOMPILE_SHADERS<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.html'>RUN</a><br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.html'>TEXTURE</a><br>UPDATE_ALBEDO<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*ALBEDO_FACTOR</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.ALBEDO_FACTOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*ALBEDO_FORCE_WHITE</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.ALBEDO_FORCE_WHITE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AO*DISTANCE</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AO.DISTANCE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AO*ENABLED</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AO.ENABLED.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AO*FACTOR</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AO.FACTOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AO*QUALITY</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AO.QUALITY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AO*RESOLUTION</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AO.RESOLUTION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AUTO_CLASSIFY_MESHES</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AUTO_CLASSIFY_MESHES.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AUTO_SYSTEM_SPLIT_VOXEL_SIZE</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AUTO_SYSTEM_SPLIT_VOXEL_SIZE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*AUTOUV_STRENGTH</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.AUTOUV_STRENGTH.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*CONTRIBUTING_PROBE_MESH_SIZE</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.CONTRIBUTING_PROBE_MESH_SIZE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*ENABLED</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.ENABLED.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*LIGHTMAP_PIXELSIZE</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.LIGHTMAP_PIXELSIZE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*LIGHTMAP_THRESHOLD</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.LIGHTMAP_THRESHOLD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*PROBE_SIZE</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.PROBE_SIZE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*PROBE_VOLUME_RESOLUTION</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.PROBE_VOLUME_RESOLUTION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*RENDER_MODE</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.RENDER_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_ILLUMINATION_FX*SHOW_PROBES</th>
+    <td>GET<br><a href='propSCENE_GLOBAL_ILLUMINATION_FX.SHOW_PROBES.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVSceneGlobals.html'>GLOBALS</a></th>
+    <td></td>
+    <td>Global scene data.</td>
+  </tr>
+  <tr>
+    <th><a href='classCVGrid.html'>GRID</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GRID*SELECT</th>
+    <td>GET<br><a href='propSCENE_GRID.SELECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>IGNORE_GUI_REBUILD</th>
+    <td>GET<br><a href='propSCENE_IGNORE_GUI_REBUILD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVImageChannel.html'>IMAGECHANNEL*%1</a></th>
+    <td></td>
+    <td>Image channels available</td>
+  </tr>
+  <tr>
+    <th>INFOTEXT</th>
+    <td>GET<br><a href='propSCENE_INFOTEXT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INITIALIZE</th>
+    <td><a href='propSCENE_INITIALIZE.html'>NOW</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INITIALIZE*COMMAND</th>
+    <td>GET<br><a href='propSCENE_INITIALIZE.COMMAND.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INITIALIZE*DIRECTOR</th>
+    <td>GET<br><a href='propSCENE_INITIALIZE.DIRECTOR.html'>SET</a><br></td>
+    <td>Director Name To Initialize</td>
+  </tr>
+  <tr>
+    <th>INITIALIZE*FREQUENCY</th>
+    <td>GET<br><a href='propSCENE_INITIALIZE.FREQUENCY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INITIALIZE*LOAD</th>
+    <td>GET<br><a href='propSCENE_INITIALIZE.LOAD.html'>SET</a><br></td>
+    <td>initialize the scene on load</td>
+  </tr>
+  <tr>
+    <th>INITIALIZE*TYPE</th>
+    <td>GET<br><a href='propSCENE_INITIALIZE.TYPE.html'>SET</a><br></td>
+    <td>Defines the what to init, Stage or Director</td>
+  </tr>
+  <tr>
+    <th>KEEP_STORED_ORTHO_FRUSTUM</th>
+    <td>GET<br><a href='propSCENE_KEEP_STORED_ORTHO_FRUSTUM.html'>SET</a><br></td>
+    <td>Keeps the orthogonal frustum stored in the scene</td>
+  </tr>
+  <tr>
+    <th>KEY_RENDERMODE</th>
+    <td>GET<br><a href='propSCENE_KEY_RENDERMODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LAYOUT*NUMBER</th>
+    <td>GET<br><a href='propSCENE_LAYOUT.NUMBER.html'>SET</a><br></td>
+    <td>The number of the render layout of the scene. This is used in Viz Engine multi pipe render mode</td>
+  </tr>
+  <tr>
+    <th>LAYOUT*TYPE</th>
+    <td>GET<br><a href='propSCENE_LAYOUT.TYPE.html'>SET</a><br></td>
+    <td>The type of the render layout of the scene. This is used in Viz Engine multi pipe render mode</td>
+  </tr>
+  <tr>
+    <th><a href='classLIGHT.html'>LIGHT%1</a></th>
+    <td></td>
+    <td>Lights in the scene</td>
+  </tr>
+  <tr>
+    <th>LIGHT*DATA</th>
+    <td>GET<br></td>
+    <td>Get the data of all lights of the scene with a single command</td>
+  </tr>
+  <tr>
+    <th>LINE_AA</th>
+    <td>GET<br><a href='propSCENE_LINE_AA.html'>SET</a><br></td>
+    <td>Use line antialiasing</td>
+  </tr>
+  <tr>
+    <th><a href='classCVSharedMemoryMap.html'>MAP</a></th>
+    <td></td>
+    <td>Accesses the scene's shared memory map (used by scripts and plugins).</td>
+  </tr>
+  <tr>
+    <th>MASK_INVERT</th>
+    <td>GET<br><a href='propSCENE_MASK_INVERT.html'>SET</a><br></td>
+    <td>Should a layer of the mask be inverted</td>
+  </tr>
+  <tr>
+    <th><a href='classMediaLayerEditor.html'>MEDIA_ASSETS</a></th>
+    <td></td>
+    <td>Manager for all media sources</td>
+  </tr>
+  <tr>
+    <th>MERGE_STYLE</th>
+    <td>GET<br><a href='propSCENE_MERGE_STYLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MOTIONBLUR_FACTOR</th>
+    <td>GET<br><a href='propSCENE_MOTIONBLUR_FACTOR.html'>SET</a><br></td>
+    <td>Set or Get the motion blur factor</td>
+  </tr>
+  <tr>
+    <th>MOTIONBLUR_MODE</th>
+    <td>GET<br><a href='propSCENE_MOTIONBLUR_MODE.html'>SET</a><br></td>
+    <td>Set or Get the motion blur mode</td>
+  </tr>
+  <tr>
+    <th>NO_GFX_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NO_IMAGE_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NUMBER_OF_MASK_BITS</th>
+    <td>GET<br></td>
+    <td>How many mask layers do we have available</td>
+  </tr>
+  <tr>
+    <th>RESET_CLIP_CHANNELS_ON_SET_SCENE</th>
+    <td>GET<br><a href='propSCENE_RESET_CLIP_CHANNELS_ON_SET_SCENE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>RINGING_FILTER</th>
+    <td>GET<br><a href='propSCENE_RINGING_FILTER.html'>SET</a><br></td>
+    <td>ringing filter</td>
+  </tr>
+  <tr>
+    <th>S2V*%1</th>
+    <td>GET<br><a href='propSCENE_S2V.%1.html'>SET</a><br></td>
+    <td>Define the studio to virtual settings</td>
+  </tr>
+  <tr>
+    <th>S2V*INDEX</th>
+    <td>GET<br><a href='propSCENE_S2V.INDEX.html'>SET</a><br></td>
+    <td>Define the index of the studio to virtual settings</td>
+  </tr>
+  <tr>
+    <th>SCENE_DATA</th>
+    <td>INITIALIZE<br></td>
+    <td>Not used</td>
+  </tr>
+  <tr>
+    <th><a href='classCVScript.html'>SCRIPT</a></th>
+    <td></td>
+    <td>The scene script</td>
+  </tr>
+  <tr>
+    <th>SCRIPT_COLOR_OLD</th>
+    <td>GET<br><a href='propSCENE_SCRIPT_COLOR_OLD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SELF_LAYER</th>
+    <td><a href='propSCENE_SELF_LAYER.html'>GET</a><br><a href='propSCENE_SELF_LAYER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SELF_LAYER_CAMERA</th>
+    <td><a href='propSCENE_SELF_LAYER_CAMERA.html'>GET</a><br><a href='propSCENE_SELF_LAYER_CAMERA.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SHADOW_TYPE</th>
+    <td>GET<br><a href='propSCENE_SHADOW_TYPE.html'>SET</a><br></td>
+    <td>Stencil based flat shadows or shadow mapping</td>
+  </tr>
+  <tr>
+    <th><a href='classCStage.html'>STAGE</a></th>
+    <td></td>
+    <td>Animation control of the scene</td>
+  </tr>
+  <tr>
+    <th>STATUS*READY_TO_DRAW</th>
+    <td>GET<br>GET_ASYNC<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>STATUS*READY_TO_DRAW_PROGRESS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVSuperChannel.html'>SUPERCHANNEL*%1</a></th>
+    <td></td>
+    <td>Super channels available</td>
+  </tr>
+  <tr>
+    <th><a href='classCVTarga3200.html'>TARGA3200</a></th>
+    <td></td>
+    <td>Targa3200</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENETREE.html'>TREE</a></th>
+    <td></td>
+    <td>Container tree of the scene</td>
+  </tr>
+  <tr>
+    <th>USE_AUTO_KEY</th>
+    <td>GET<br><a href='propSCENE_USE_AUTO_KEY.html'>SET</a><br></td>
+    <td>Should the auto key rendering method be used</td>
+  </tr>
+  <tr>
+    <th>USER_ASPECT</th>
+    <td>GET<br><a href='propSCENE_USER_ASPECT.html'>SET</a><br></td>
+    <td>The camera aspect set by the user</td>
+  </tr>
+  <tr>
+    <th>VDF*PAYLOAD</th>
+    <td><a href='propSCENE_VDF.PAYLOAD.html'>GET</a><br></td>
+    <td>returns VDF paypload description document</td>
+  </tr>
+  <tr>
+    <th><a href='classCVVideo.html'>VIDEO</a></th>
+    <td></td>
+    <td>Video</td>
+  </tr>
+  <tr>
+    <th>VIDEO*%1*FORMAT</th>
+    <td>GET<br><a href='propSCENE_VIDEO.%1.FORMAT.html'>SET</a><br></td>
+    <td>What video format should be used in this scene for a certain input</td>
+  </tr>
+  <tr>
+    <th>VIDEO*%1*MODE</th>
+    <td>GET<br><a href='propSCENE_VIDEO.%1.MODE.html'>SET</a><br></td>
+    <td>What video mode should be used in this scene for a certain input</td>
+  </tr>
+</table>
+</body></html>

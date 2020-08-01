@@ -1,0 +1,282 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>Rendercamera</h1>
+<p>Inherits: <a href='classCVCamera.html'>CVCamera</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>SET</th>
+    <td><i>PObject</i>&nbsp;<br>    </td>    <td>copy camera data</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>CAMERA_NAME</th>
+    <td>GET<br><a href='propRendercamera_CAMERA_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CENTER_SHIFT_X</th>
+    <td>GET<br><a href='propRendercamera_CENTER_SHIFT_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CENTER_SHIFT_Y</th>
+    <td>GET<br><a href='propRendercamera_CENTER_SHIFT_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIPPING_FAR</th>
+    <td>GET<br><a href='propRendercamera_CLIPPING_FAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIPPING_NEAR</th>
+    <td>GET<br><a href='propRendercamera_CLIPPING_NEAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EXTERNAL</th>
+    <td>GET<br><a href='propRendercamera_EXTERNAL.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EYE_SEPARATION</th>
+    <td>GET<br><a href='propRendercamera_EYE_SEPARATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FILM_GRAIN</th>
+    <td>GET<br><a href='propRendercamera_FILM_GRAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_F_STOP</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_F_STOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_FALLOFF_FAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_FALLOFF_FAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_FALLOFF_NEAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_FALLOFF_NEAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_PLANE_FAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_PLANE_FAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_PLANE_INTERNAL</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_PLANE_INTERNAL.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_PLANE_NEAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_PLANE_NEAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_RANGE_FAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_RANGE_FAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_RANGE_NEAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_RANGE_NEAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_VALUE_FAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_VALUE_FAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCAL_VALUE_NEAR</th>
+    <td>GET<br><a href='propRendercamera_FOCAL_VALUE_NEAR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOCUS_DISTANCE_OFFSET</th>
+    <td>GET<br><a href='propRendercamera_FOCUS_DISTANCE_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRUSTUM</th>
+    <td>GET<br><a href='propRendercamera_FRUSTUM.html'>SCROLL</a><br><a href='propRendercamera_FRUSTUM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INFINITE_HANDLE</th>
+    <td>GET<br><a href='propRendercamera_INFINITE_HANDLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LINK_FOV_BLUR</th>
+    <td>GET<br><a href='propRendercamera_LINK_FOV_BLUR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LINK_FRONT_LENS_OFFSET</th>
+    <td>GET<br><a href='propRendercamera_LINK_FRONT_LENS_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOCAL_CLIPPING</th>
+    <td>GET<br><a href='propRendercamera_LOCAL_CLIPPING.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOCK</th>
+    <td>GET<br><a href='propRendercamera_LOCK.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ORIENTATION*TRACK*ACTIVE</th>
+    <td>GET<br><a href='propRendercamera_ORIENTATION.TRACK.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ORIENTATION*TRACK*OBJECT</th>
+    <td>GET<br><a href='propRendercamera_ORIENTATION.TRACK.OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PAN</th>
+    <td>GET<br><a href='propRendercamera_PAN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classPOSXYZ.html'>POSITION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION*TRACK*ACTIVE</th>
+    <td>GET<br><a href='propRendercamera_POSITION.TRACK.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION*TRACK*OBJECT</th>
+    <td>GET<br><a href='propRendercamera_POSITION.TRACK.OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION*X</th>
+    <td><a href='propRendercamera_POSITION.X.html'>SET_RELATIVE</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION*Y</th>
+    <td><a href='propRendercamera_POSITION.Y.html'>SET_RELATIVE</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION*Z</th>
+    <td><a href='propRendercamera_POSITION.Z.html'>SET_RELATIVE</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION_RELATIVE*X</th>
+    <td><a href='propRendercamera_POSITION_RELATIVE.X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION_RELATIVE*Y</th>
+    <td><a href='propRendercamera_POSITION_RELATIVE.Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POSITION_RELATIVE*Z</th>
+    <td><a href='propRendercamera_POSITION_RELATIVE.Z.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>RAWZOOMFOCUS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REMOTE_PLANE</th>
+    <td>GET<br><a href='propRendercamera_REMOTE_PLANE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classROTATION.html'>ROTATION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ROTATION*TRACK*ACTIVE</th>
+    <td>GET<br><a href='propRendercamera_ROTATION.TRACK.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ROTATION*TRACK*OBJECT</th>
+    <td>GET<br><a href='propRendercamera_ROTATION.TRACK.OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>STEREO_METHOD</th>
+    <td>GET<br><a href='propRendercamera_STEREO_METHOD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TILT</th>
+    <td>GET<br><a href='propRendercamera_TILT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TRACK_FOCUS_ACTIVE</th>
+    <td>GET<br><a href='propRendercamera_TRACK_FOCUS_ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TWIST</th>
+    <td>GET<br><a href='propRendercamera_TWIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TYPE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VERBOSE</th>
+    <td>GET<br><a href='propRendercamera_VERBOSE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VIEW</th>
+    <td>GET<br><a href='propRendercamera_VIEW.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VISIBLE</th>
+    <td>GET<br><a href='propRendercamera_VISIBLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ZERO_PARALLAX_DIST</th>
+    <td>GET<br><a href='propRendercamera_ZERO_PARALLAX_DIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ZOOM</th>
+    <td>GET<br><a href='propRendercamera_ZOOM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

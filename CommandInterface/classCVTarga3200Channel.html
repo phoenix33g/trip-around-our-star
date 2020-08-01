@@ -1,0 +1,415 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVTarga3200Channel</h1>
+<p>Inherits: <a href='classCAnimBase.html'>CAnimBase</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>TAKE_SNAPSHOT</th>
+    <td><i>Enum</i>&nbsp;target = FILE<br>
+      &nbsp;&nbsp;DB<br>
+      &nbsp;&nbsp;FILE<br>
+<br><i>String</i>&nbsp;path = ""<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>TRIM</th>
+    <td>-</td>
+    <td>Trim the length of the clip</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>A_CHANNEL*%1</th>
+    <td>GET<br><a href='propCVTarga3200Channel_A_CHANNEL.%1.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ALPHA</th>
+    <td>GET<br><a href='propCVTarga3200Channel_ALPHA.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>AUDIO_VOLUME</th>
+    <td>GET<br><a href='propCVTarga3200Channel_AUDIO_VOLUME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_AUTORUN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CLIP_AUTORUN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_CONTROL</th>
+    <td>CONTINUE<br>DEC_FRAME<br><a href='propCVTarga3200Channel_CLIP_CONTROL.html'>FLUSH</a><br>INC_FRAME<br>PAUSE<br>PLAY<br>STOP<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_CUE</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CLIP_CUE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_IN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CLIP_IN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_LENGTH</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_LOOP_MODE</th>
+    <td><a href='propCVTarga3200Channel_CLIP_LOOP_MODE.html'>GET</a><br><a href='propCVTarga3200Channel_CLIP_LOOP_MODE.html'>SET</a><br></td>
+    <td>Get and set the clip loop back mode (true means the clip restarts to play at it's end).</td>
+  </tr>
+  <tr>
+    <th>CLIP_NAME</th>
+    <td><a href='propCVTarga3200Channel_CLIP_NAME.html'>GET</a><br><a href='propCVTarga3200Channel_CLIP_NAME.html'>SET</a><br></td>
+    <td>Loads a clip into the channel.  If auto play is switched on, the clip emediately starts to play.</td>
+  </tr>
+  <tr>
+    <th>CLIP_NAME_B2B</th>
+    <td><a href='propCVTarga3200Channel_CLIP_NAME_B2B.html'>GET</a><br><a href='propCVTarga3200Channel_CLIP_NAME_B2B.html'>SET</a><br></td>
+    <td>Cues the clip back to back to an already loaded clip.</td>
+  </tr>
+  <tr>
+    <th>CLIP_NAME_RELATIVE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_OUT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CLIP_OUT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_POSITION</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_REPEAT_MODE</th>
+    <td><a href='propCVTarga3200Channel_CLIP_REPEAT_MODE.html'>GET</a><br><a href='propCVTarga3200Channel_CLIP_REPEAT_MODE.html'>SET</a><br></td>
+    <td>Get and set the repeat mode.  When the clip player is paused or the frame could not be delivered in time, the last field/frame played will be repeated.  This mode determines how the repeating should be done.</td>
+  </tr>
+  <tr>
+    <th>CLIP_REVERSE_FIELDS</th>
+    <td><a href='propCVTarga3200Channel_CLIP_REVERSE_FIELDS.html'>GET</a><br><a href='propCVTarga3200Channel_CLIP_REVERSE_FIELDS.html'>SET</a><br></td>
+    <td>Get and set the reverse fields mode.  When reverse fields mode is on and the playback speed is negative, the first and second fields will be swapped to get a smoother animation.</td>
+  </tr>
+  <tr>
+    <th>CLIP_SPEED</th>
+    <td><a href='propCVTarga3200Channel_CLIP_SPEED.html'>GET</a><br><a href='propCVTarga3200Channel_CLIP_SPEED.html'>SET</a><br></td>
+    <td>Get and set the clip playback speed (1.0 is normal speed).</td>
+  </tr>
+  <tr>
+    <th>CLIP_UPSCALE_LUMA</th>
+    <td><a href='propCVTarga3200Channel_CLIP_UPSCALE_LUMA.html'>GET</a><br><a href='propCVTarga3200Channel_CLIP_UPSCALE_LUMA.html'>SET</a><br></td>
+    <td>Get and set the upscale luma mode.  Key values in .dv files normally range from 16-235.  Turning on upscale luma for clips expands these values to 0-255.</td>
+  </tr>
+  <tr>
+    <th>CROP_BOTTOM</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CROP_BOTTOM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_LEFT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CROP_LEFT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_RIGHT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CROP_RIGHT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_TOP</th>
+    <td>GET<br><a href='propCVTarga3200Channel_CROP_TOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FORMAT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_FORMAT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HAS_CLIP_CAPABILITY</th>
+    <td>GET<br><a href='propCVTarga3200Channel_HAS_CLIP_CAPABILITY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ID</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_ADD_HIGHLIGHTS</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_ADD_HIGHLIGHTS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_ADD_SHADOWS</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_ADD_SHADOWS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_COLOR_CORRECTION</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_COLOR_CORRECTION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_COLOR_GAIN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_COLOR_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_COLOR_OFFSET</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_COLOR_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_CYAN_GAIN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_CYAN_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_DATABASE</th>
+    <td>GET<br>INVOKE<br><a href='propCVTarga3200Channel_KEYER_DATABASE.html'>LOAD</a><br><a href='propCVTarga3200Channel_KEYER_DATABASE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_HIGHLIGHTS_GAIN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_HIGHLIGHTS_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_HIGHLIGHTS_OFFSET</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_HIGHLIGHTS_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INNER_HIGHLIGHTS</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_INNER_HIGHLIGHTS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INNER_SHADOWS</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_INNER_SHADOWS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INNER_UV_DIAM</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_INNER_UV_DIAM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INVERT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_INVERT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_BLUR_X</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_LV_BLUR_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_BLUR_Y</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_LV_BLUR_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_BRIGHTNESS_WEIGHT_OFFSET</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_LV_BRIGHTNESS_WEIGHT_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_VARIANT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_LV_VARIANT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_MAGENTA_GAIN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_MAGENTA_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_OUTER_HIGHLIGHTS</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_OUTER_HIGHLIGHTS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_OUTER_SHADOWS</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_OUTER_SHADOWS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_OUTER_UV_DIAM</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_OUTER_UV_DIAM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE</th>
+    <td>INVOKE<br><a href='propCVTarga3200Channel_KEYER_SAMPLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_HEIGHT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_SAMPLE_HEIGHT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_WIDTH</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_SAMPLE_WIDTH.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_X</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_SAMPLE_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_Y</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_SAMPLE_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SHADOWS_GAIN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_SHADOWS_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SHADOWS_OFFSET</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_SHADOWS_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_STUDIO</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_STUDIO.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_U</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_U.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_V</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_V.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_YELLOW_GAIN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYER_YELLOW_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYING_MODE</th>
+    <td>GET<br><a href='propCVTarga3200Channel_KEYING_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_CONTROL</th>
+    <td>CONTINUE<br><a href='propCVTarga3200Channel_PENDING.CLIP_CONTROL.html'>FLUSH</a><br>PAUSE<br>PLAY<br>STOP<br><a href='propCVTarga3200Channel_PENDING.CLIP_CONTROL.html'>SWAP</a><br><a href='propCVTarga3200Channel_PENDING.CLIP_CONTROL.html'>SWAP_EOF</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_CUE</th>
+    <td>GET<br><a href='propCVTarga3200Channel_PENDING.CLIP_CUE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_IN</th>
+    <td>GET<br><a href='propCVTarga3200Channel_PENDING.CLIP_IN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_LOOP_MODE</th>
+    <td><a href='propCVTarga3200Channel_PENDING.CLIP_LOOP_MODE.html'>GET</a><br><a href='propCVTarga3200Channel_PENDING.CLIP_LOOP_MODE.html'>SET</a><br></td>
+    <td>Get and set the pending clip player loop back mode (true means the clip restarts to play at it's end).</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_NAME</th>
+    <td><a href='propCVTarga3200Channel_PENDING.CLIP_NAME.html'>GET</a><br><a href='propCVTarga3200Channel_PENDING.CLIP_NAME.html'>SET</a><br></td>
+    <td>Loads a clip into the pending clip player.</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_OUT</th>
+    <td>GET<br><a href='propCVTarga3200Channel_PENDING.CLIP_OUT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_REPEAT_MODE</th>
+    <td><a href='propCVTarga3200Channel_PENDING.CLIP_REPEAT_MODE.html'>GET</a><br><a href='propCVTarga3200Channel_PENDING.CLIP_REPEAT_MODE.html'>SET</a><br></td>
+    <td>Get and set the repeat mode.  When the pending clip player is paused or the frame could not be delivered in time, the last field/frame played will be repeated. This mode determines how the repeating should be done.</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_REVERSE_FIELDS</th>
+    <td><a href='propCVTarga3200Channel_PENDING.CLIP_REVERSE_FIELDS.html'>GET</a><br><a href='propCVTarga3200Channel_PENDING.CLIP_REVERSE_FIELDS.html'>SET</a><br></td>
+    <td>Get and set the reverse fields mode.  When reverse fields mode is on and the playback speed is negative, the first and second fields will be swapped to get a smoother animation.</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_SPEED</th>
+    <td><a href='propCVTarga3200Channel_PENDING.CLIP_SPEED.html'>GET</a><br><a href='propCVTarga3200Channel_PENDING.CLIP_SPEED.html'>SET</a><br></td>
+    <td>Get and set the pending clip player playback speed (1.0 is normal speed).</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_UPSCALE_LUMA</th>
+    <td><a href='propCVTarga3200Channel_PENDING.CLIP_UPSCALE_LUMA.html'>GET</a><br><a href='propCVTarga3200Channel_PENDING.CLIP_UPSCALE_LUMA.html'>SET</a><br></td>
+    <td>Get and set the upscale luma mode.  Key values in .dv files normally range from 16-235.  Turning on upscale luma for clips expands these values to 0-255.</td>
+  </tr>
+  <tr>
+    <th>PENDING*SUPPORT</th>
+    <td><a href='propCVTarga3200Channel_PENDING.SUPPORT.html'>GET</a><br></td>
+    <td>Checks whether pending clips are supported or not.</td>
+  </tr>
+  <tr>
+    <th>POS_X</th>
+    <td>GET<br><a href='propCVTarga3200Channel_POS_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POS_Y</th>
+    <td>GET<br><a href='propCVTarga3200Channel_POS_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIORITY</th>
+    <td>GET<br><a href='propCVTarga3200Channel_PRIORITY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SIZE_X</th>
+    <td>GET<br><a href='propCVTarga3200Channel_SIZE_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SIZE_Y</th>
+    <td>GET<br><a href='propCVTarga3200Channel_SIZE_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SNAPSHOT_NAME</th>
+    <td><a href='propCVTarga3200Channel_SNAPSHOT_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TARGET</th>
+    <td>GET<br><a href='propCVTarga3200Channel_TARGET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

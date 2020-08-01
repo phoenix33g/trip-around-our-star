@@ -1,0 +1,202 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>RENDERER_BASE</h1>
+<p>Inherits: <a href='classEditor.html'>Editor</a></p>
+<p>Derived classes: <a href='classRENDER_EDITOR.html'>RENDER_EDITOR</a>, <a href='classRENDER_TEXTURE.html'>RENDER_TEXTURE</a>, <a href='classSCENE_EDITOR.html'>SCENE_EDITOR</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ANTIALIASE</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>Do software scene antialiasing on the current output</td>
+  </tr>
+  <tr>
+    <th>GET_OBJECT</th>
+    <td>-</td>
+    <td>Which object does the editor display right now</td>
+  </tr>
+  <tr>
+    <th>GET_OBJECT_LOCATION_PATH</th>
+    <td>-</td>
+    <td>Returns the set location path</td>
+  </tr>
+  <tr>
+    <th>INITIALIZE</th>
+    <td>-</td>
+    <td>Initialize the object for rendering. e.g. Defining textures, distplay lists...</td>
+  </tr>
+  <tr>
+    <th>REDRAW</th>
+    <td>-</td>
+    <td>recomputes and redraws the scene</td>
+  </tr>
+  <tr>
+    <th>RENDER_TIME</th>
+    <td><i>Int</i>&nbsp;num_samples = 1<br>    </td>    <td>recomputes and redraws the scene and returns the render time in secs</td>
+  </tr>
+  <tr>
+    <th>SET_CHANNEL</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>Which channel is rendered with with editor. This is used in Viz Engine multi pipe rendering mode</td>
+  </tr>
+  <tr>
+    <th>SET_OBJECT</th>
+    <td><i>String</i>&nbsp;scene = ""<br><i>Bool</i>&nbsp;global = 0<br>    </td>    <td>Controls the object in the main layer</td>
+  </tr>
+  <tr>
+    <th>SET_PERFORMANCE</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>Show the performance meter</td>
+  </tr>
+  <tr>
+    <th>SET_SAFE_AREA</th>
+    <td><i>Bool</i>&nbsp;<br>    </td>    <td>Set the safe area</td>
+  </tr>
+  <tr>
+    <th>SET_TITLE_AREA</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>Set the title area</td>
+  </tr>
+  <tr>
+    <th>SET_VSYNC</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>Set the vertical sync</td>
+  </tr>
+  <tr>
+    <th>SNAPSHOT</th>
+    <td><i>String</i>&nbsp;<br><i>Enum</i>&nbsp;<br>
+      &nbsp;&nbsp;RGB<br>
+      &nbsp;&nbsp;RGBA<br>
+<br><i>Int</i>&nbsp; = -1<br><i>Int</i>&nbsp; = -1<br>    </td>    <td>Generate a snapshot of the current output and save it to disk</td>
+  </tr>
+  <tr>
+    <th>UNPROJECT</th>
+    <td><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>What coordinates (x, y, z) are responsible for a certain pixel position</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th><a href='classSCENE.html'>BACK_LAYER</a></th>
+    <td><a href='propRENDERER_BASE_BACK_LAYER.html'>ADD_INJECT_BEFORE</a><br>CLEAR_INJECT_BEFORE<br>GET_ACTIVE<br>GET_INJECT_BEFORE<br>GET_OBJECT<br>GET_OBJECT_INFO<br><a href='propRENDERER_BASE_BACK_LAYER.html'>GET_OBJECT_LOCATION_PATH</a><br><a href='propRENDERER_BASE_BACK_LAYER.html'>SET_ACTIVE</a><br><a href='propRENDERER_BASE_BACK_LAYER.html'>SET_OBJECT</a><br></td>
+    <td>Controls the scene in the back layer</td>
+  </tr>
+  <tr>
+    <th>CONTENTS_VISIBLE</th>
+    <td>GET<br><a href='propRENDERER_BASE_CONTENTS_VISIBLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>COORDINATE_SYSTEM</th>
+    <td>GET<br><a href='propRENDERER_BASE_COORDINATE_SYSTEM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CSC</th>
+    <td><a href='propRENDERER_BASE_CSC.html'>GET</a><br><a href='propRENDERER_BASE_CSC.html'>HIDE</a><br><a href='propRENDERER_BASE_CSC.html'>SHOW</a><br></td>
+    <td>The Center Shift Calibration Marker</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE.html'>FRONT_LAYER</a></th>
+    <td><a href='propRENDERER_BASE_FRONT_LAYER.html'>ADD_INJECT_BEFORE</a><br>CLEAR_INJECT_BEFORE<br>GET_ACTIVE<br>GET_INJECT_BEFORE<br>GET_OBJECT<br>GET_OBJECT_INFO<br><a href='propRENDERER_BASE_FRONT_LAYER.html'>GET_OBJECT_LOCATION_PATH</a><br><a href='propRENDERER_BASE_FRONT_LAYER.html'>SET_ACTIVE</a><br><a href='propRENDERER_BASE_FRONT_LAYER.html'>SET_OBJECT</a><br></td>
+    <td>Controls the scene in the front layer</td>
+  </tr>
+  <tr>
+    <th><a href='classCVGrid.html'>GRID</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HUD</th>
+    <td><a href='propRENDERER_BASE_HUD.html'>GET</a><br><a href='propRENDERER_BASE_HUD.html'>SET</a><br></td>
+    <td>The Head Up Display</td>
+  </tr>
+  <tr>
+    <th><a href='classTEXTURE.html'>KEY_INTERNAL</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEY_INTERNAL*ACTIVE</th>
+    <td>GET<br><a href='propRENDERER_BASE_KEY_INTERNAL.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE.html'>MAIN_LAYER</a></th>
+    <td><a href='propRENDERER_BASE_MAIN_LAYER.html'>ADD_INJECT_BEFORE</a><br>CLEAR_INJECT_BEFORE<br>GET_ACTIVE<br>GET_INJECT_BEFORE<br>GET_OBJECT<br>GET_OBJECT_INFO<br><a href='propRENDERER_BASE_MAIN_LAYER.html'>GET_OBJECT_LOCATION_PATH</a><br><a href='propRENDERER_BASE_MAIN_LAYER.html'>SET_ACTIVE</a><br><a href='propRENDERER_BASE_MAIN_LAYER.html'>SET_OBJECT</a><br></td>
+    <td>Controls the scene in the main layer</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE.html'>MIDDLE_LAYER</a></th>
+    <td>GET_OBJECT<br><a href='propRENDERER_BASE_MIDDLE_LAYER.html'>SET_OBJECT</a><br></td>
+    <td>for Trio</td>
+  </tr>
+  <tr>
+    <th><a href='classviz::editor::performance::performace_counter_t.html'>PERFORMANCE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PICK_LAYER</th>
+    <td>GET<br><a href='propRENDERER_BASE_PICK_LAYER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PICK_QUAD</th>
+    <td><a href='propRENDERER_BASE_PICK_QUAD.html'>SET</a><br></td>
+    <td>Set the Pick Quad for chroma key active or inactive</td>
+  </tr>
+  <tr>
+    <th>PICK_QUAD_DATA</th>
+    <td><a href='propRENDERER_BASE_PICK_QUAD_DATA.html'>SET</a><br></td>
+    <td>Set the Pick Quad Positiion and Size</td>
+  </tr>
+  <tr>
+    <th><a href='classCVRenderToDiskManager.html'>POST</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POST*STATUS</th>
+    <td><a href='propRENDERER_BASE_POST.STATUS.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POST_MODE</th>
+    <td>GET<br><a href='propRENDERER_BASE_POST_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SAA</th>
+    <td>GET<br></td>
+    <td>Are we able to render software</td>
+  </tr>
+  <tr>
+    <th>SAA*ACTIVE</th>
+    <td>GET<br><a href='propRENDERER_BASE_SAA.ACTIVE.html'>SET</a><br></td>
+    <td>Do we render with software scene antialiasing</td>
+  </tr>
+  <tr>
+    <th>SAA*SAMPLES</th>
+    <td>GET<br><a href='propRENDERER_BASE_SAA.SAMPLES.html'>SET</a><br></td>
+    <td>How many samples do we want to use</td>
+  </tr>
+  <tr>
+    <th>TEXT_EDITOR</th>
+    <td><a href='propRENDERER_BASE_TEXT_EDITOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>UPDATE</th>
+    <td>GET<br><a href='propRENDERER_BASE_UPDATE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VGA_PREVIEW</th>
+    <td>GET<br><a href='propRENDERER_BASE_VGA_PREVIEW.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VIEW</th>
+    <td><a href='propRENDERER_BASE_VIEW.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

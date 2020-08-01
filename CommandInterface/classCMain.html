@@ -1,0 +1,752 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CMain</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>{ri}</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ABOUT</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ALLOCATE</th>
+    <td><i>Int</i>&nbsp;size_in_mb = 0<br>    </td>    <td>allocates memory to test memory issues</td>
+  </tr>
+  <tr>
+    <th>CLOG</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONVERT_ANSI_TO_UTF8</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONVERT_UTF8_TO_ANSI</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>CRASH</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>DELETE</th>
+    <td><i>String</i>&nbsp;location<br><i>Int</i>&nbsp;delete_references = 0<br>    </td>    <td>Delete an object or a folder</td>
+  </tr>
+  <tr>
+    <th>EXIT</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EXPORT_OBJECT_XML</th>
+    <td><i>String</i>&nbsp;location<br><i>String</i>&nbsp;destination path<br><i>Int</i>&nbsp;analyze token balance = 0<br>    </td>    <td>Export DB object content as XML file</td>
+  </tr>
+  <tr>
+    <th>FORCE_DELETE</th>
+    <td><i>String</i>&nbsp;location<br><i>Int</i>&nbsp;delete_references = 0<br>    </td>    <td>Delete a folder even if it is not empty</td>
+  </tr>
+  <tr>
+    <th>GET_CHANNEL_NUMBER</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET_HANDLECOUNT</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET_IMPORTABLE_FILES</th>
+    <td><i>String</i>&nbsp;filename<br><i>Enum</i>&nbsp; = ALL<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;ARCHIVE<br>
+      &nbsp;&nbsp;AUDIO_CLIP<br>
+      &nbsp;&nbsp;FONT<br>
+      &nbsp;&nbsp;GEOM<br>
+      &nbsp;&nbsp;IMAGE<br>
+      &nbsp;&nbsp;NONE<br>
+      &nbsp;&nbsp;SCENE<br>
+      &nbsp;&nbsp;SUBSTANCE<br>
+      &nbsp;&nbsp;VIZ2X_STYLE<br>
+<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>GET_TICKCOUNT</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ICONIFY</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>IS_IMPORTABLE</th>
+    <td><i>FileName</i>&nbsp;filename<br>    </td>    <td>returns importable files in 2.x format</td>
+  </tr>
+  <tr>
+    <th>IS_ON_AIR</th>
+    <td>-</td>
+    <td>Checks whether viz is on-air mode.</td>
+  </tr>
+  <tr>
+    <th>IS_RENDERER_READY</th>
+    <td>-</td>
+    <td>Returns true if render editor exists and has a valid window</td>
+  </tr>
+  <tr>
+    <th>MAPS</th>
+    <td><i>String</i>&nbsp; = ""<br><i>ArgList</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>ON_AIR</th>
+    <td><i>Bool</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>peak_get_icon</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>PERFORMANCE_TEST</th>
+    <td><i>Int</i>&nbsp;number_of_iterations<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>REPLY</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>RESTART</th>
+    <td><i>ArgList</i>&nbsp;command_arguments<br>    </td>    <td>exits Viz Engine and restarts in specified mode: No argument - start with current cmd line, CFG - configuration mode, ENG - engine without GUI, ENG_GUI - engine with GUI, ART - artist mode.</td>
+  </tr>
+  <tr>
+    <th>SEND_ANSWER</th>
+    <td><i>Enum</i>&nbsp; = ALL<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;ANSWER<br>
+      &nbsp;&nbsp;COMMAND<br>
+      &nbsp;&nbsp;ERROR<br>
+      &nbsp;&nbsp;ICON<br>
+      &nbsp;&nbsp;INFO<br>
+      &nbsp;&nbsp;MESSAGE<br>
+      &nbsp;&nbsp;NONE<br>
+<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>SEND_GUI_COMMAND</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>sends a command to the VizGui</td>
+  </tr>
+  <tr>
+    <th>SEND_GUI_COMMAND_PLAIN</th>
+    <td><i>Int</i>&nbsp;<br><i>ArgList</i>&nbsp;<br>    </td>    <td>sends a command as it is to the VizGui</td>
+  </tr>
+  <tr>
+    <th>SHOW_COMMANDS</th>
+    <td><i>Bool</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>START_GUI</th>
+    <td>-</td>
+    <td>start VizGui for current Viz Engine</td>
+  </tr>
+  <tr>
+    <th>SWITCH_EDIT</th>
+    <td><i>Enum</i>&nbsp; = SHOW<br>
+      &nbsp;&nbsp;HIDDEN<br>
+      &nbsp;&nbsp;SHOW<br>
+<br>    </td>    <td>switch to edit mode</td>
+  </tr>
+  <tr>
+    <th>SWITCH_EXTERNAL</th>
+    <td><i>Enum</i>&nbsp; = SHOW<br>
+      &nbsp;&nbsp;HIDDEN<br>
+      &nbsp;&nbsp;SHOW<br>
+<br><i>Bool</i>&nbsp;backup = 1<br>    </td>    <td>switch to external control mode</td>
+  </tr>
+  <tr>
+    <th>SWITCH_POST</th>
+    <td>-</td>
+    <td>switch to post mode</td>
+  </tr>
+  <tr>
+    <th>TCP_CONNECT</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VERSION</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>WAIT_ON_BGL</th>
+    <td>-</td>
+    <td>Waits on backgroundloading for one Scene</td>
+  </tr>
+  <tr>
+    <th>zipped</th>
+    <td><i>ArgList</i>&nbsp;<br>    </td>    <td>prefix to any command, causes the answer to be sent compressed using the ZIP algorithm!</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>{id}</th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ALL_TABLE</th>
+    <td><a href='propCMain_ALL_TABLE.html'>EXIST</a><br>GET_SIZE<br>REORGANIZE<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ANIMATION_EDITOR</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCArchive.html'>ARCHIVE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classAudioProcessor.html'>AUDIO</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVAudioClipPool.html'>AUDIO_CLIP</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>AUTOKEYWORD</th>
+    <td><a href='propCMain_AUTOKEYWORD.html'>CLEAR</a><br><a href='propCMain_AUTOKEYWORD.html'>GET</a><br><a href='propCMain_AUTOKEYWORD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE.html'>BACK_SCENE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVbaseFontPool.html'>BASE_FONT</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BGL_COMPATIBILITY</th>
+    <td><a href='propCMain_BGL_COMPATIBILITY.html'>GET</a><br><a href='propCMain_BGL_COMPATIBILITY.html'>GET_EX</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCPluginManager.html'>BUILT_IN</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVcharStylePool.html'>CHAR_STYLE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_TRANSFER_PROGRESS</th>
+    <td><a href='propCMain_CLIP_TRANSFER_PROGRESS.html'>SET_VALUES</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_TRANSFER_PROGRESS*ACTIVE</th>
+    <td><a href='propCMain_CLIP_TRANSFER_PROGRESS.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCLOCKPOOL.html'>CLOCK</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCLOCK.html'>CLOCK%1</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLOCK*DATA</th>
+    <td>GET<br><a href='propCMain_CLOCK.DATA.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLR</th>
+    <td><a href='propCMain_CLR.html'>LOAD</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCCommandRecorder.html'>CMD_RECORD</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCCfgData.html'>CONFIGURATION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONSOLE</th>
+    <td><a href='propCMain_CONSOLE.html'>FLUSH</a><br><a href='propCMain_CONSOLE.html'>REDIRECT</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classContainerPool.html'>CONTAINER</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVDBInterface.html'>DATABASE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCDebugControl.html'>DEBUG_CONTROL</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DEBUG_PUSH</th>
+    <td><a href='propCMain_DEBUG_PUSH.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVRenderToDiskManager.html'>DEVICE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DIRECTORY</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCDisplay.html'>DISPLAY*%1</a></th>
+    <td></td>
+    <td>get display by index</td>
+  </tr>
+  <tr>
+    <th>DISPLAY*SCANOUT_INTENSITY</th>
+    <td>RESET<br><a href='propCMain_DISPLAY.SCANOUT_INTENSITY.html'>SET</a><br></td>
+    <td>set scanout intensity for all displays</td>
+  </tr>
+  <tr>
+    <th><a href='classCEditorPool.html'>EDITOR</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classEventPool.html'>EVENT_POOL</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCommandFeedBack.html'>FEEDBACK</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVCommandFeedBackUnicast.html'>FEEDBACKUNICAST</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FILENAME_FROM_UUID</th>
+    <td><a href='propCMain_FILENAME_FROM_UUID.html'>GET</a><br></td>
+    <td>get database path without opening the file</td>
+  </tr>
+  <tr>
+    <th><a href='classCFontPool.html'>FONT</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE.html'>FRONT_SCENE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCFunctionManager.html'>FUNCTION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classGeompool.html'>GEOM</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCGlobal.html'>GLOBAL</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GUI*PID</th>
+    <td><a href='propCMain_GUI.PID.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*GRAPHICS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_CLIPIN_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_CLIPOUT_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_GFX_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_GPUS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_IMAGE_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_STREAMIN_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_SUPER_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_VIDEO_INPUTS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NUMBER_VIDEOIN_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*NVIDIA_DRIVER_STATUS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*SYSTEM</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HARDWARE*VIDEO_OUTPUT</th>
+    <td>GET<br>GET_EX<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classImagepool.html'>IMAGE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classImportPool.html'>IMPORTER</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>IS_UAC_ENABLED</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classOld_License.html'>KEY</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classNew_License.html'>KEY2</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOCATION</th>
+    <td><a href='propCMain_LOCATION.html'>CONVERT</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVLog.html'>LOG</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCMagicStuff.html'>MAGIC</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCMain.html'>MAIN</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE.html'>MAIN_SCENE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classMaterialpool.html'>MATERIAL</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classMaterialAdvancedpool.html'>MATERIAL_ADVANCED</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVHeap.html'>MEMORY</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCModifierManager.html'>MODIFIER</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MUX</th>
+    <td><a href='propCMain_MUX.html'>GET_LAYER_FROM_MAIN_SESSION</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ONAIR</th>
+    <td>GET_CLIENTS<br>GET_INFO<br>GET_ONAIR<br><a href='propCMain_ONAIR.html'>GET_PEER_INFO</a><br>REGISTER<br>UNREGISTER<br>UNREGISTER_ALL<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PLATFORM</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVPlayList.html'>PLAY</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCPluginManager.html'>PLUGIN_MANAGER</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POOLS</th>
+    <td>CACHE_CLEANUP<br>CLEANUP<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classEditor.html'>POSTRENDERER</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PROCESS*MEMORY</th>
+    <td><a href='propCMain_PROCESS.MEMORY.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classRENDER_EDITOR.html'>REND</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVRenderToDiskManager.html'>RENDER_TO_DISK</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classRENDER_EDITOR.html'>RENDERER</a></th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SCANOUT_INTENSITY</th>
+    <td>RESET<br><a href='propCMain_SCANOUT_INTENSITY.html'>SET</a><br></td>
+    <td>deprecated</td>
+  </tr>
+  <tr>
+    <th><a href='classScenepool.html'>SCENE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE_EDITOR.html'>SCENE_EDITOR</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classSCENE_EDITOR.html'>SCENE_EDITOR_MAIN</a></th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classRENDERER_BASE.html'>SCENE_RENDERER</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCShaderManager.html'>SHADER</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVStageEvents.html'>STAGE_EVENTS</a></th>
+    <td></td>
+    <td>Access to the stage events.</td>
+  </tr>
+  <tr>
+    <th>STARTUP_MODE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVSubstancePool.html'>SUBSTANCE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCSuggestion.html'>SUGGESTION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM*CHANNEL*%1</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM*FLICKER_FILTER_SUPPORTED</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM*HARDWARE_TYPE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM*MEMORY</th>
+    <td><a href='propCMain_SYSTEM.MEMORY.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM*MEMORY_ADVANCED</th>
+    <td><a href='propCMain_SYSTEM.MEMORY_ADVANCED.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM_GLOBALS*EDITOR_SIZE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM_GLOBALS*OUTPUT_POS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM_GLOBALS*OUTPUT_SIZE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYSTEM_GLOBALS*SHOW_MOUSE_CURSOR</th>
+    <td>GET<br><a href='propCMain_SYSTEM_GLOBALS.SHOW_MOUSE_CURSOR.html'>SET</a><br></td>
+    <td>Shows/Hides the mouse cursor in the on-air output window.</td>
+  </tr>
+  <tr>
+    <th><a href='classCVTimedCommands.html'>TC</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TEST_SIGNALS</th>
+    <td><a href='propCMain_TEST_SIGNALS.html'>ACTIVE</a><br><a href='propCMain_TEST_SIGNALS.html'>INACTIVE</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TEXTURE*MEMORY</th>
+    <td><a href='propCMain_TEXTURE.MEMORY.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVTrio.html'>TRIO</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCUndoRedo.html'>UNDOREDO</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVVersion.html'>VERSIONS</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVClipPool.html'>VIDEO_CLIP</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVVizCommunication.html'>VIZ_COMMUNICATION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VIZ_PROGRAMDATA_FOLDER</th>
+    <td>GET<br></td>
+    <td>Folder where VizArtist/Engine stores its machine specific data</td>
+  </tr>
+  <tr>
+    <th>VIZ_PUBLICDOCUMENTS_FOLDER</th>
+    <td>GET<br></td>
+    <td>Public Documents folder</td>
+  </tr>
+  <tr>
+    <th>VIZ2POINTX_MODE</th>
+    <td>GET<br><a href='propCMain_VIZ2POINTX_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classVizOneServicesManager.html'>VIZONE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classVTSSystem.html'>VTS</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

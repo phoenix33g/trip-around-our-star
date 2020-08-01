@@ -1,0 +1,173 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>RENDER_EDITOR</h1>
+<p>Inherits: <a href='classRENDERER_BASE.html'>RENDERER_BASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>CREATE_FSWINDOW</th>
+    <td>-</td>
+    <td>Create Fullscreen render window</td>
+  </tr>
+  <tr>
+    <th>DROP</th>
+    <td><i>Int</i>&nbsp;x<br><i>Int</i>&nbsp;y<br><i>Int</i>&nbsp; = 0<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>DROPINZ</th>
+    <td><i>Int</i>&nbsp;x<br><i>Int</i>&nbsp;y<br><i>Int</i>&nbsp; = 1<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>DROPZ</th>
+    <td><i>Int</i>&nbsp;x<br><i>Int</i>&nbsp;y<br><i>Int</i>&nbsp; = 1<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>JOIN_SWAPGROUP</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>join swap group</td>
+  </tr>
+  <tr>
+    <th>PREVIEW</th>
+    <td><i>String</i>&nbsp;Scene=SCENE*<path><br><i>String</i>&nbsp;Output=VIDEO|ANSWER|filename<br><i>ArgList</i>&nbsp;Director names and times in pairs<br>    </td>    <td>Renders a preview of the given scene without disturbing the video output (assuming that enough rendering power is available)</td>
+  </tr>
+  <tr>
+    <th>PREVIEW_SIZE</th>
+    <td><i>Int</i>&nbsp; = -1<br><i>Int</i>&nbsp; = -1<br>    </td>    <td>Sets the size of the preview for the PREVIEW command, only affects 'ANSWER' output</td>
+  </tr>
+  <tr>
+    <th>SET_CAMERA</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>SET_KEY</th>
+    <td><i>Bool</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>SHOW_BOUNDING_BOX</th>
+    <td><i>Bool</i>&nbsp;<br>    </td>    <td>Are we able to show the bounding box of the selected object in the render window</td>
+  </tr>
+  <tr>
+    <th>SLEEP</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>sleep for some ms</td>
+  </tr>
+  <tr>
+    <th>SYNC_DISPLAYS</th>
+    <td>-</td>
+    <td>synchronize displays</td>
+  </tr>
+  <tr>
+    <th>SYNC_VIDEOINS</th>
+    <td>-</td>
+    <td>synchronize videoins</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>(null)</th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BACK_LAYER*EYE_SEPARATION</th>
+    <td>GET<br><a href='propRENDER_EDITOR_BACK_LAYER.EYE_SEPARATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BACK_LAYER*LAYER_VISIBLE</th>
+    <td>GET<br><a href='propRENDER_EDITOR_BACK_LAYER.LAYER_VISIBLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BACK_LAYER*OVERWRITE_STEREO</th>
+    <td><a href='propRENDER_EDITOR_BACK_LAYER.OVERWRITE_STEREO.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BACK_LAYER*ZERO_PARALLAX_DIST</th>
+    <td>GET<br><a href='propRENDER_EDITOR_BACK_LAYER.ZERO_PARALLAX_DIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CURRENT_CAMERA</th>
+    <td><a href='propRENDER_EDITOR_CURRENT_CAMERA.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CURRENT_CAMERA*EYE_SEPARATION</th>
+    <td>GET<br><a href='propRENDER_EDITOR_CURRENT_CAMERA.EYE_SEPARATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CURRENT_CAMERA*STEREO_METHOD</th>
+    <td>GET<br><a href='propRENDER_EDITOR_CURRENT_CAMERA.STEREO_METHOD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CURRENT_CAMERA*ZERO_PARALLAX_DIST</th>
+    <td>GET<br><a href='propRENDER_EDITOR_CURRENT_CAMERA.ZERO_PARALLAX_DIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EYE_SEPARATION</th>
+    <td>GET<br><a href='propRENDER_EDITOR_EYE_SEPARATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRONT_LAYER*EYE_SEPARATION</th>
+    <td>GET<br><a href='propRENDER_EDITOR_FRONT_LAYER.EYE_SEPARATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRONT_LAYER*LAYER_VISIBLE</th>
+    <td>GET<br><a href='propRENDER_EDITOR_FRONT_LAYER.LAYER_VISIBLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRONT_LAYER*OVERWRITE_STEREO</th>
+    <td><a href='propRENDER_EDITOR_FRONT_LAYER.OVERWRITE_STEREO.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRONT_LAYER*ZERO_PARALLAX_DIST</th>
+    <td>GET<br><a href='propRENDER_EDITOR_FRONT_LAYER.ZERO_PARALLAX_DIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MAIN_LAYER*EYE_SEPARATION</th>
+    <td>GET<br><a href='propRENDER_EDITOR_MAIN_LAYER.EYE_SEPARATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MAIN_LAYER*LAYER_VISIBLE</th>
+    <td>GET<br><a href='propRENDER_EDITOR_MAIN_LAYER.LAYER_VISIBLE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MAIN_LAYER*OVERWRITE_STEREO</th>
+    <td><a href='propRENDER_EDITOR_MAIN_LAYER.OVERWRITE_STEREO.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MAIN_LAYER*ZERO_PARALLAX_DIST</th>
+    <td>GET<br><a href='propRENDER_EDITOR_MAIN_LAYER.ZERO_PARALLAX_DIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OVERWRITE_STEREO</th>
+    <td><a href='propRENDER_EDITOR_OVERWRITE_STEREO.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>STEREO_PARAMETERS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ZERO_PARALLAX_DIST</th>
+    <td>GET<br><a href='propRENDER_EDITOR_ZERO_PARALLAX_DIST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

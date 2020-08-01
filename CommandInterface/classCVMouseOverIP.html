@@ -1,0 +1,38 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVMouseOverIP</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>DEFINE_SERVER</th>
+    <td><i>String</i>&nbsp;serverAddress<br><i>Int</i>&nbsp;serverPort<br><i>Int</i>&nbsp;localPort<br>    </td>    <td>define a new VizMouseServer (IP address, port) and the local listening port</td>
+  </tr>
+  <tr>
+    <th>QUIT_SERVER</th>
+    <td><i>Int</i>&nbsp;serverID = 0<br>    </td>    <td>quit the VizMouseServer(s); add serverID to only quit one server</td>
+  </tr>
+  <tr>
+    <th>REGISTER</th>
+    <td><i>Int</i>&nbsp;serverID = 0<br>    </td>    <td>register the viz engine; add serverID to only send to one server</td>
+  </tr>
+  <tr>
+    <th>UNDEFINE_SERVER</th>
+    <td><i>Int</i>&nbsp;serverID = 0<br>    </td>    <td>undefine a VizMouseServer (IP, port, local listening port)</td>
+  </tr>
+  <tr>
+    <th>UNREGISTER</th>
+    <td><i>Int</i>&nbsp;serverID = 0<br>    </td>    <td>unregister the viz engine; add serverID to only send to one server</td>
+  </tr>
+  <tr>
+    <th>UNREGISTER_ALL</th>
+    <td><i>Int</i>&nbsp;serverID = 0<br>    </td>    <td>unregister all viz engines; add serverID to only send to one server</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+</table>
+<p>-</p>
+</body></html>

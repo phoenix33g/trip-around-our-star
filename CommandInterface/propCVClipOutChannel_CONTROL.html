@@ -1,0 +1,27 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CONTROL</h1>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>CHANGE_DURATION</th>
+    <td><i>UInt</i>&nbsp;Frames<br>    </td>    <td>Changed the requested number of frames to be recorded. If argument is greater than zero this amount of frames will be captured. Otherwise it keeps recording until stopped.</td>
+  </tr>
+  <tr>
+    <th>FLUSH</th>
+    <td>-</td>
+    <td>Close capture channel.  The currently captured clip will be unloaded and the channel reset to its initial state.</td>
+  </tr>
+  <tr>
+    <th>PAUSE</th>
+    <td>-</td>
+    <td>Pause capturing.  The capture can be resumed with CONTINUE.</td>
+  </tr>
+  <tr>
+    <th>RECORD</th>
+    <td><i>UInt</i>&nbsp;Frames<br>    </td>    <td>Start capturing. If argument is greater than zero this amount of frames will be captured. Otherwise it keeps recording until stopped.</td>
+  </tr>
+</table>
+</body></html>

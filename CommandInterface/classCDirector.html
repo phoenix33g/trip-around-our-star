@@ -1,0 +1,284 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CDirector</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<p>Derived classes: <a href='classCDirectorTree.html'>CDirectorTree</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD</th>
+    <td><i>Timecode</i>&nbsp;time<br><i>Enum</i>&nbsp;event_type = STOP<br>
+      &nbsp;&nbsp;LOCAL_STOP<br>
+      &nbsp;&nbsp;STOP<br>
+      &nbsp;&nbsp;TAG<br>
+<br>    </td>    <td>add an event</td>
+  </tr>
+  <tr>
+    <th>CONTINUE</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>continues the animation</td>
+  </tr>
+  <tr>
+    <th>CONTINUE_AT</th>
+    <td><i>Timecode</i>&nbsp;time<br><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>continues the animation at a certain time</td>
+  </tr>
+  <tr>
+    <th>CONTINUE_IGNORE_NEXT_STOP</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>continues the animation</td>
+  </tr>
+  <tr>
+    <th>CONTINUE_NOSTOP</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>continues the animation without stops</td>
+  </tr>
+  <tr>
+    <th>GET_STATUS</th>
+    <td><i>Enum</i>&nbsp; = NORMAL<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>Returns RUNNING|STOP time_of_next_keyframe time</td>
+  </tr>
+  <tr>
+    <th>GET_TIMELINE</th>
+    <td>-</td>
+    <td>returns the current time</td>
+  </tr>
+  <tr>
+    <th>GOTO</th>
+    <td><i>String</i>&nbsp;name_of_stop_a<br><i>String</i>&nbsp;name_of_stop_b<br>    </td>    <td>animate from stop a to b</td>
+  </tr>
+  <tr>
+    <th>GOTO_REL</th>
+    <td><i>String</i>&nbsp;name_of_stop_a<br><i>String</i>&nbsp;name_of_stop_b<br>    </td>    <td>animate from stop a to b relative to the director offset</td>
+  </tr>
+  <tr>
+    <th>GOTO_TRIO</th>
+    <td><i>String</i>&nbsp;name_of_stop_a<br><i>String</i>&nbsp;name_of_stop_b<br>    </td>    <td>animate from stop a to b according to the Trio rules</td>
+  </tr>
+  <tr>
+    <th>MOVE</th>
+    <td><i>Timecode</i>&nbsp;start<br><i>Timecode</i>&nbsp;end<br><i>Timecode</i>&nbsp;offset<br>    </td>    <td>move animation</td>
+  </tr>
+  <tr>
+    <th>SCALE</th>
+    <td><i>Timecode</i>&nbsp;start<br><i>Timecode</i>&nbsp;end<br><i>Timecode</i>&nbsp;origin<br><i>Float</i>&nbsp;scaling_factor<br>    </td>    <td>scale animation</td>
+  </tr>
+  <tr>
+    <th>SET_LENGTH</th>
+    <td><i>Timecode</i>&nbsp;duration<br>    </td>    <td>set duration by scaling animation</td>
+  </tr>
+  <tr>
+    <th>SHOW</th>
+    <td><i>ArgList</i>&nbsp;timeString<br>    </td>    <td>sets the timeline to the specified value</td>
+  </tr>
+  <tr>
+    <th>SHOW_POST</th>
+    <td><i>ArgList</i>&nbsp;timeString<br>    </td>    <td>sets the timeline to the specified value</td>
+  </tr>
+  <tr>
+    <th>SHOW_SUB</th>
+    <td><i>ArgList</i>&nbsp;timeString<br>    </td>    <td>sets the timeline and subdirector timelines to the specified value</td>
+  </tr>
+  <tr>
+    <th>START</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>starts the animation</td>
+  </tr>
+  <tr>
+    <th>START_NOSTOP</th>
+    <td><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NORMAL<br>
+      &nbsp;&nbsp;REVERSE<br>
+<br>    </td>    <td>starts the animation without stops</td>
+  </tr>
+  <tr>
+    <th>STOP</th>
+    <td>-</td>
+    <td>stops the animation</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>ACTION</th>
+    <td><a href='propCDirector_ACTION.html'>ADD</a><br><a href='propCDirector_ACTION.html'>DELETE</a><br><a href='propCDirector_ACTION.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCChannelAction.html'>ACTION*</a></th>
+    <td></td>
+    <td>accesses an action channel by its name (2.x syntax)</td>
+  </tr>
+  <tr>
+    <th><a href='classCChannelAction.html'>ACTION_CHANNEL*$</a></th>
+    <td></td>
+    <td>accesses an action channel by its name</td>
+  </tr>
+  <tr>
+    <th>ANIMATION</th>
+    <td><a href='propCDirector_ANIMATION.html'>CONTINUE</a><br><a href='propCDirector_ANIMATION.html'>CONTINUE_AT</a><br><a href='propCDirector_ANIMATION.html'>CONTINUE_IGNORE_NEXT_STOP</a><br><a href='propCDirector_ANIMATION.html'>CONTINUE_NOSTOP</a><br>CUE<br><a href='propCDirector_ANIMATION.html'>START</a><br><a href='propCDirector_ANIMATION.html'>START_NOSTOP</a><br><a href='propCDirector_ANIMATION.html'>STOP</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ANIMATION_CHANNEL</th>
+    <td><a href='propCDirector_ANIMATION_CHANNEL.html'>ADD</a><br><a href='propCDirector_ANIMATION_CHANNEL.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCChannelBase.html'>ANIMATION_CHANNEL*$</a></th>
+    <td></td>
+    <td>accesses an animation channel by its name</td>
+  </tr>
+  <tr>
+    <th>AUTO_START</th>
+    <td>GET<br><a href='propCDirector_AUTO_START.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCChannelBase.html'>CHANNEL*$</a></th>
+    <td></td>
+    <td>accesses an action or animation channel by its name</td>
+  </tr>
+  <tr>
+    <th>CONTROL_CHANNELS</th>
+    <td><a href='propCDirector_CONTROL_CHANNELS.html'>GROUP</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DIRECTION</th>
+    <td><a href='propCDirector_DIRECTION.html'>GET</a><br><a href='propCDirector_DIRECTION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>END_TIME</th>
+    <td><a href='propCDirector_END_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EVENT</th>
+    <td><a href='propCDirector_EVENT.html'>ADD</a><br><a href='propCDirector_EVENT.html'>ADD_AT_TIME</a><br>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCChannelEvent.html'>EVENT_CHANNEL</a></th>
+    <td></td>
+    <td>accesses the event channel</td>
+  </tr>
+  <tr>
+    <th>EXECATSTARTFIELD</th>
+    <td><a href='propCDirector_EXECATSTARTFIELD.html'>GET</a><br><a href='propCDirector_EXECATSTARTFIELD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INNER_END_TIME</th>
+    <td><a href='propCDirector_INNER_END_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INNER_START_TIME</th>
+    <td><a href='propCDirector_INNER_START_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCKeyframeBase.html'>KEY*$</a></th>
+    <td></td>
+    <td>accesses a keyframe by its name</td>
+  </tr>
+  <tr>
+    <th>LENGTH</th>
+    <td><a href='propCDirector_LENGTH.html'>GET</a><br><a href='propCDirector_LENGTH.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MASTER_CLIP</th>
+    <td><a href='propCDirector_MASTER_CLIP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NAME</th>
+    <td><a href='propCDirector_NAME.html'>GET</a><br><a href='propCDirector_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OBJECT</th>
+    <td><a href='propCDirector_OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OFFSET</th>
+    <td><a href='propCDirector_OFFSET.html'>GET</a><br><a href='propCDirector_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OPEN</th>
+    <td><a href='propCDirector_OPEN.html'>GET</a><br><a href='propCDirector_OPEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OUTER_END_TIME</th>
+    <td><a href='propCDirector_OUTER_END_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OUTER_START_TIME</th>
+    <td><a href='propCDirector_OUTER_START_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCStage.html'>STAGE</a></th>
+    <td></td>
+    <td>returns the stage</td>
+  </tr>
+  <tr>
+    <th>START_TIME</th>
+    <td><a href='propCDirector_START_TIME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>STATUS</th>
+    <td><a href='propCDirector_STATUS.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TIME</th>
+    <td><a href='propCDirector_TIME.html'>GET</a><br><a href='propCDirector_TIME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TREE</th>
+    <td><a href='propCDirector_TREE.html'>GET_ANIM_OBJ_OPEN</a><br><a href='propCDirector_TREE.html'>GET_CONTAINER_OPEN</a><br><a href='propCDirector_TREE.html'>GET_OPEN</a><br><a href='propCDirector_TREE.html'>SET_ANIM_OBJ_OPEN</a><br><a href='propCDirector_TREE.html'>SET_CONTAINER_OPEN</a><br><a href='propCDirector_TREE.html'>SET_OPEN</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>USE_SYSTEM_TIME</th>
+    <td><a href='propCDirector_USE_SYSTEM_TIME.html'>GET</a><br><a href='propCDirector_USE_SYSTEM_TIME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

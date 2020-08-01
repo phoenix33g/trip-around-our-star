@@ -1,0 +1,29 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>TC_COMMAND</h1>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>Retrieve a list of stored commands for the given TC source</td>
+  </tr>
+  <tr>
+    <th>SET</th>
+    <td><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br><i>String</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>Set a TC command by index, hh mm ss ff, command and command repeat count. e.g.: SET 1 13 01 02 04 "-1 MAIN VERSION" 1</td>
+  </tr>
+  <tr>
+    <th>SET_BY_FIELD</th>
+    <td><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br><i>String</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>Set a TC command by index, fieldnumber, command and command repeat count. e.g. SET_BY_FIELD 1 347832 "-1 MAIN VERSION" 1</td>
+  </tr>
+  <tr>
+    <th>SET_SECOND</th>
+    <td><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br><i>Float</i>&nbsp;<br><i>String</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>SET_TC</th>
+    <td><i>Int</i>&nbsp;<br><i>String</i>&nbsp;<br><i>ArgList</i>&nbsp;<br>    </td>    <td>Set a one shot TC command by index, TC and command. e.g.: SET_TC 1 13:01:02:04 "-1 MAIN VERSION"</td>
+  </tr>
+</table>
+</body></html>

@@ -1,0 +1,94 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVControlTree</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD_CHANNEL</th>
+    <td><i>String</i>&nbsp;name<br><i>String</i>&nbsp;location<br><i>String</i>&nbsp;destination_path<br><i>Enum</i>&nbsp;where = AFTER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>add a new control channel to control 'location'</td>
+  </tr>
+  <tr>
+    <th>ADD_GROUP</th>
+    <td><i>String</i>&nbsp;group_name<br><i>String</i>&nbsp;destination_path<br><i>Enum</i>&nbsp;where = AFTER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>add a new control group</td>
+  </tr>
+  <tr>
+    <th>CLOSE</th>
+    <td><i>String</i>&nbsp;paths<br>    </td>    <td>close entries</td>
+  </tr>
+  <tr>
+    <th>CLOSE_TREE</th>
+    <td>-</td>
+    <td>open all control groups in the tree</td>
+  </tr>
+  <tr>
+    <th>COPY</th>
+    <td><i>String</i>&nbsp;entry_paths<br><i>String</i>&nbsp;dest_path<br><i>Enum</i>&nbsp;where = AFTER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>copy entries</td>
+  </tr>
+  <tr>
+    <th>DELETE</th>
+    <td><i>String</i>&nbsp;paths<br>    </td>    <td>delete entries</td>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td><i>Bool</i>&nbsp;expanded_list = 0<br><i>Bool</i>&nbsp;extended_parameters_list = 0<br>    </td>    <td>get list of all control entries</td>
+  </tr>
+  <tr>
+    <th>GET_NEW_CHANNEL_NAME</th>
+    <td><i>String</i>&nbsp;location<br>    </td>    <td>called by the GUI to get a default channel name for a new channel</td>
+  </tr>
+  <tr>
+    <th>GET_SELECTED</th>
+    <td>-</td>
+    <td>get list of all control entries which belong to containers selected in the scenetree.</td>
+  </tr>
+  <tr>
+    <th>MOVE</th>
+    <td><i>String</i>&nbsp;entry_paths<br><i>String</i>&nbsp;dest_path<br><i>Enum</i>&nbsp;where = AFTER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>move entries</td>
+  </tr>
+  <tr>
+    <th>OPEN</th>
+    <td><i>String</i>&nbsp;paths<br>    </td>    <td>open entries</td>
+  </tr>
+  <tr>
+    <th>OPEN_TREE</th>
+    <td>-</td>
+    <td>open all control groups in the tree</td>
+  </tr>
+  <tr>
+    <th>TOGGLE</th>
+    <td><i>String</i>&nbsp;paths<br>    </td>    <td>toggle open/closed state of entries</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th><a href='classCVControlElement.html'>$</a></th>
+    <td></td>
+    <td>access channel/group by name</td>
+  </tr>
+  <tr>
+    <th><a href='classCVControlElement.html'>/</a></th>
+    <td></td>
+    <td>access channel/group by tree path</td>
+  </tr>
+</table>
+</body></html>

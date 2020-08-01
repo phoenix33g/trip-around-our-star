@@ -1,0 +1,192 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>Pool</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<p>Derived classes: <a href='classCFontPool.html'>CFontPool</a>, <a href='classCVAudioClipPool.html'>CVAudioClipPool</a>, <a href='classCVClipPool.html'>CVClipPool</a>, <a href='classCVSubstancePool.html'>CVSubstancePool</a>, <a href='classCVbaseFontPool.html'>CVbaseFontPool</a>, <a href='classCVcharStylePool.html'>CVcharStylePool</a>, <a href='classGeompool.html'>Geompool</a>, <a href='classImagepool.html'>Imagepool</a>, <a href='classImportPool.html'>ImportPool</a>, <a href='classMaterialAdvancedpool.html'>MaterialAdvancedpool</a>, <a href='classMaterialpool.html'>Materialpool</a>, <a href='classScenepool.html'>Scenepool</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>{ri}</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ADD_GROUP</th>
+    <td><i>String</i>&nbsp;location<br><i>String</i>&nbsp;folder_name = ""<br>    </td>    <td>Add a folder to the pool</td>
+  </tr>
+  <tr>
+    <th>CACHE_CLEANUP</th>
+    <td>-</td>
+    <td>Remove all path to UUID mappings from memory</td>
+  </tr>
+  <tr>
+    <th>CLEANUP</th>
+    <td>-</td>
+    <td>Remove all unused objects from memory</td>
+  </tr>
+  <tr>
+    <th>CLOSE</th>
+    <td><i>String</i>&nbsp;location = ""<br><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;FORCE<br>
+<br>    </td>    <td>Remove a pool object from memory. This command will be ignored if the object is in use</td>
+  </tr>
+  <tr>
+    <th>COPY</th>
+    <td><i>String</i>&nbsp;from<br><i>String</i>&nbsp;to<br>    </td>    <td>Copy a pool element</td>
+  </tr>
+  <tr>
+    <th>DEC_REFERENCE_COUNT</th>
+    <td><i>String</i>&nbsp;location<br>    </td>    <td>Decrements a pool object's reference count to unlock it.</td>
+  </tr>
+  <tr>
+    <th>DELETE</th>
+    <td><i>String</i>&nbsp;location<br><i>Int</i>&nbsp;delete_references = 0<br>    </td>    <td>Delete an object or a folder</td>
+  </tr>
+  <tr>
+    <th>EXIST</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Does a pool element exist</td>
+  </tr>
+  <tr>
+    <th>FOLDER_EXIST</th>
+    <td><i>String</i>&nbsp;folder = ""<br>    </td>    <td>Checks whether the specified folder exists.</td>
+  </tr>
+  <tr>
+    <th>FORCE_DELETE</th>
+    <td><i>String</i>&nbsp;location<br><i>Int</i>&nbsp;delete_references = 0<br>    </td>    <td>Delete a folder even if it is not empty</td>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td><i>String</i>&nbsp;folder = ""<br>    </td>    <td>Get all objects in a folder</td>
+  </tr>
+  <tr>
+    <th>GET_ALL_GROUPS</th>
+    <td>-</td>
+    <td>Get all folders of the pool</td>
+  </tr>
+  <tr>
+    <th>GET_DETAIL</th>
+    <td><i>String</i>&nbsp;folder = ""<br>    </td>    <td>Gets the names of files in the specified folder.</td>
+  </tr>
+  <tr>
+    <th>GET_DETAIL2</th>
+    <td><i>String</i>&nbsp;folder<br>    </td>    <td>Get detailed information of all objects in a folder</td>
+  </tr>
+  <tr>
+    <th>GET_EXTERNAL_FILE_REFERENCES</th>
+    <td><i>ArgList</i>&nbsp;dbpath<br>    </td>    <td>Returns all external file references contained in a scene.</td>
+  </tr>
+  <tr>
+    <th>GET_GROUPS</th>
+    <td><i>String</i>&nbsp;location = ""<br><i>Int</i>&nbsp;sub_levels = 0<br>    </td>    <td>Get all folders inside a folder, but only one level deep</td>
+  </tr>
+  <tr>
+    <th>GET_GROUPS_DETAIL</th>
+    <td><i>String</i>&nbsp;folder = ""<br>    </td>    <td>Gets the names of folders and projects in the specified folder.</td>
+  </tr>
+  <tr>
+    <th>GET_GROUPS_DOWN</th>
+    <td><i>String</i>&nbsp; = ""<br>    </td>    <td>Get all folders inside a folder (including all sub_folders)</td>
+  </tr>
+  <tr>
+    <th>GET_GROUPS_DOWN_1</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Get all folders inside a folder 1 level down</td>
+  </tr>
+  <tr>
+    <th>GET_GROUPS_DOWN_2</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Get all folders inside a folder 2 levels down</td>
+  </tr>
+  <tr>
+    <th>GET_ICON</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Get the icon of a pool object</td>
+  </tr>
+  <tr>
+    <th>IMPORT_GET_NAME</th>
+    <td><i>FileName</i>&nbsp;sourcePath<br>    </td>    <td>Gets the filename under which an imported file will be stored in the db.</td>
+  </tr>
+  <tr>
+    <th>INC_REFERENCE_COUNT</th>
+    <td><i>String</i>&nbsp;location<br>    </td>    <td>Increments a pool object's reference count to lock it.</td>
+  </tr>
+  <tr>
+    <th>INFO</th>
+    <td>-</td>
+    <td>Which pool object are in memory right now</td>
+  </tr>
+  <tr>
+    <th>IS_CHANGED</th>
+    <td><i>String</i>&nbsp;location<br>    </td>    <td>Was the object changed since it was loaded from disk</td>
+  </tr>
+  <tr>
+    <th>IS_IMPORTABLE</th>
+    <td><i>FileName</i>&nbsp;<br>    </td>    <td>Can a file be imported into the pool</td>
+  </tr>
+  <tr>
+    <th>LOAD</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Load a pool object into memory</td>
+  </tr>
+  <tr>
+    <th>LOAD_ALL</th>
+    <td><i>String</i>&nbsp;folder<br><i>Bool</i>&nbsp;keep_in_memory = 0<br>    </td>    <td>Load all objects of a certain pool folder into memory</td>
+  </tr>
+  <tr>
+    <th>LOADBGL</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Load a pool object into memory in the background</td>
+  </tr>
+  <tr>
+    <th>MARK_UNCHANGED</th>
+    <td><i>String</i>&nbsp;location<br>    </td>    <td>Marks a pool object unchanged.</td>
+  </tr>
+  <tr>
+    <th>MOVE</th>
+    <td><i>String</i>&nbsp;from<br><i>String</i>&nbsp;to<br>    </td>    <td>Rename or move a pool object</td>
+  </tr>
+  <tr>
+    <th>NEW</th>
+    <td><i>String</i>&nbsp;name = ""<br>    </td>    <td>Create a new pool object</td>
+  </tr>
+  <tr>
+    <th>RELOAD</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Reload a pool object. This will restore the state of the object to the state when it was saved</td>
+  </tr>
+  <tr>
+    <th>RELOADBGL</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Reload a pool object in background. This will restore the state of the object to the state when it was saved</td>
+  </tr>
+  <tr>
+    <th>RESTORE</th>
+    <td><i>String</i>&nbsp;location<br>    </td>    <td>Tries to restore a corrupt file.</td>
+  </tr>
+  <tr>
+    <th>SAVE</th>
+    <td><i>String</i>&nbsp;location = ""<br>    </td>    <td>Write a pool object from memory to disk</td>
+  </tr>
+  <tr>
+    <th>SAVE_AS</th>
+    <td><i>String</i>&nbsp;location<br><i>String</i>&nbsp;new_location<br>    </td>    <td>Save a pool object under a different name</td>
+  </tr>
+  <tr>
+    <th>SAVE_AS_AND_RELOAD</th>
+    <td><i>String</i>&nbsp;location<br><i>String</i>&nbsp;new_location<br>    </td>    <td>Saves a pool object under a different name and reloads the (original) object</td>
+  </tr>
+  <tr>
+    <th>SAVE_TO_DATABASE</th>
+    <td><i>String</i>&nbsp;location<br><i>String</i>&nbsp;new_location<br>    </td>    <td>Write a pool object, which only exists in memory (e.g. NEW), to disk</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>{id}</th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ON_OBJECT_BY_NAME</th>
+    <td></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

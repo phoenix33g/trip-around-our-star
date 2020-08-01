@@ -1,0 +1,333 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVClipInChannel</h1>
+<p>Inherits: <a href='classCVChannel.html'>CVChannel</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>TRIM</th>
+    <td>-</td>
+    <td>Trim the length of the clip</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>ANIMATION*LOOPCONTROL</th>
+    <td><a href='propCVClipInChannel_ANIMATION.LOOPCONTROL.html'>FLUSH</a><br><a href='propCVClipInChannel_ANIMATION.LOOPCONTROL.html'>STOP</a><br></td>
+    <td>Controls the animation loop.</td>
+  </tr>
+  <tr>
+    <th>ANIMATION*LOOPCOUNT</th>
+    <td><a href='propCVClipInChannel_ANIMATION.LOOPCOUNT.html'>GET</a><br><a href='propCVClipInChannel_ANIMATION.LOOPCOUNT.html'>SET</a><br></td>
+    <td>Number of loops to do. Needs to be set before Loop In/Out.</td>
+  </tr>
+  <tr>
+    <th>ANIMATION*LOOPIN</th>
+    <td><a href='propCVClipInChannel_ANIMATION.LOOPIN.html'>GET</a><br><a href='propCVClipInChannel_ANIMATION.LOOPIN.html'>SET</a><br></td>
+    <td>Starting frame of the looping part in a clip. Set Loop Count first.</td>
+  </tr>
+  <tr>
+    <th>ANIMATION*LOOPOUT</th>
+    <td><a href='propCVClipInChannel_ANIMATION.LOOPOUT.html'>GET</a><br><a href='propCVClipInChannel_ANIMATION.LOOPOUT.html'>SET</a><br></td>
+    <td>Ending frame of the looping part in a clip. Set Loop Count first.</td>
+  </tr>
+  <tr>
+    <th>AUTORUN</th>
+    <td><a href='propCVClipInChannel_AUTORUN.html'>GET</a><br><a href='propCVClipInChannel_AUTORUN.html'>SET</a><br></td>
+    <td>Autostart mode for this channel</td>
+  </tr>
+  <tr>
+    <th>AVAILABLE</th>
+    <td><a href='propCVClipInChannel_AVAILABLE.html'>GET</a><br></td>
+    <td>The availability of the channel</td>
+  </tr>
+  <tr>
+    <th>CLIP_AUTORUN</th>
+    <td><a href='propCVClipInChannel_CLIP_AUTORUN.html'>GET</a><br><a href='propCVClipInChannel_CLIP_AUTORUN.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_CONTROL</th>
+    <td><a href='propCVClipInChannel_CLIP_CONTROL.html'>CONTINUE</a><br><a href='propCVClipInChannel_CLIP_CONTROL.html'>DEC_FRAME</a><br><a href='propCVClipInChannel_CLIP_CONTROL.html'>FLUSH</a><br><a href='propCVClipInChannel_CLIP_CONTROL.html'>INC_FRAME</a><br><a href='propCVClipInChannel_CLIP_CONTROL.html'>PAUSE</a><br><a href='propCVClipInChannel_CLIP_CONTROL.html'>PLAY</a><br><a href='propCVClipInChannel_CLIP_CONTROL.html'>STOP</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_CUE</th>
+    <td><a href='propCVClipInChannel_CLIP_CUE.html'>GET</a><br><a href='propCVClipInChannel_CLIP_CUE.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_IN</th>
+    <td><a href='propCVClipInChannel_CLIP_IN.html'>GET</a><br><a href='propCVClipInChannel_CLIP_IN.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_LENGTH</th>
+    <td><a href='propCVClipInChannel_CLIP_LENGTH.html'>GET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_LOOP_MODE</th>
+    <td><a href='propCVClipInChannel_CLIP_LOOP_MODE.html'>GET</a><br><a href='propCVClipInChannel_CLIP_LOOP_MODE.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_NAME</th>
+    <td><a href='propCVClipInChannel_CLIP_NAME.html'>GET</a><br><a href='propCVClipInChannel_CLIP_NAME.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_NAME_B2B</th>
+    <td><a href='propCVClipInChannel_CLIP_NAME_B2B.html'>GET</a><br><a href='propCVClipInChannel_CLIP_NAME_B2B.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_NAME_RELATIVE</th>
+    <td><a href='propCVClipInChannel_CLIP_NAME_RELATIVE.html'>GET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_OUT</th>
+    <td><a href='propCVClipInChannel_CLIP_OUT.html'>GET</a><br><a href='propCVClipInChannel_CLIP_OUT.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_POSITION</th>
+    <td><a href='propCVClipInChannel_CLIP_POSITION.html'>GET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_REPEAT_MODE</th>
+    <td><a href='propCVClipInChannel_CLIP_REPEAT_MODE.html'>GET</a><br><a href='propCVClipInChannel_CLIP_REPEAT_MODE.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_REVERSE_FIELDS</th>
+    <td><a href='propCVClipInChannel_CLIP_REVERSE_FIELDS.html'>GET</a><br><a href='propCVClipInChannel_CLIP_REVERSE_FIELDS.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_SPEED</th>
+    <td><a href='propCVClipInChannel_CLIP_SPEED.html'>GET</a><br><a href='propCVClipInChannel_CLIP_SPEED.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CLIP_UPSCALE_LUMA</th>
+    <td><a href='propCVClipInChannel_CLIP_UPSCALE_LUMA.html'>GET</a><br><a href='propCVClipInChannel_CLIP_UPSCALE_LUMA.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>CONTROL</th>
+    <td><a href='propCVClipInChannel_CONTROL.html'>CONTINUE</a><br><a href='propCVClipInChannel_CONTROL.html'>DEC_FRAME</a><br><a href='propCVClipInChannel_CONTROL.html'>FLUSH</a><br><a href='propCVClipInChannel_CONTROL.html'>INC_FRAME</a><br><a href='propCVClipInChannel_CONTROL.html'>PAUSE</a><br><a href='propCVClipInChannel_CONTROL.html'>PLAY</a><br><a href='propCVClipInChannel_CONTROL.html'>STOP</a><br></td>
+    <td>Controls the active clip player.</td>
+  </tr>
+  <tr>
+    <th>CUE</th>
+    <td><a href='propCVClipInChannel_CUE.html'>GET</a><br><a href='propCVClipInChannel_CUE.html'>SET</a><br></td>
+    <td>Actual clip position</td>
+  </tr>
+  <tr>
+    <th>DATA</th>
+    <td><a href='propCVClipInChannel_DATA.html'>GET</a><br></td>
+    <td>All data related to this channel</td>
+  </tr>
+  <tr>
+    <th>ID</th>
+    <td><a href='propCVClipInChannel_ID.html'>GET</a><br></td>
+    <td>The id of the channel.</td>
+  </tr>
+  <tr>
+    <th>IN</th>
+    <td><a href='propCVClipInChannel_IN.html'>GET</a><br><a href='propCVClipInChannel_IN.html'>SET</a><br></td>
+    <td>Starting frame of the clip.</td>
+  </tr>
+  <tr>
+    <th>INOUT</th>
+    <td><a href='propCVClipInChannel_INOUT.html'>GET</a><br><a href='propCVClipInChannel_INOUT.html'>SET</a><br></td>
+    <td>Starting and ending frame of the clip.</td>
+  </tr>
+  <tr>
+    <th>LENGTH</th>
+    <td><a href='propCVClipInChannel_LENGTH.html'>GET</a><br></td>
+    <td>The clip length.</td>
+  </tr>
+  <tr>
+    <th>LOOP_MODE</th>
+    <td><a href='propCVClipInChannel_LOOP_MODE.html'>GET</a><br><a href='propCVClipInChannel_LOOP_MODE.html'>SET</a><br></td>
+    <td>Get and set the clip loop back mode (true means the clip restarts to play at it's end).</td>
+  </tr>
+  <tr>
+    <th>NAME</th>
+    <td><a href='propCVClipInChannel_NAME.html'>CUE</a><br><a href='propCVClipInChannel_NAME.html'>GET</a><br><a href='propCVClipInChannel_NAME.html'>SET</a><br></td>
+    <td>Loads a clip into the channel.  If auto play is switched on, the clip immediately starts to play.</td>
+  </tr>
+  <tr>
+    <th>NAME_B2B</th>
+    <td><a href='propCVClipInChannel_NAME_B2B.html'>GET</a><br><a href='propCVClipInChannel_NAME_B2B.html'>SET</a><br></td>
+    <td>Cues the clip back to back to an already loaded clip.</td>
+  </tr>
+  <tr>
+    <th>NAME_RELATIVE</th>
+    <td><a href='propCVClipInChannel_NAME_RELATIVE.html'>GET</a><br></td>
+    <td>The relative clip name without the <clip_root> part.</td>
+  </tr>
+  <tr>
+    <th>OUT</th>
+    <td><a href='propCVClipInChannel_OUT.html'>GET</a><br><a href='propCVClipInChannel_OUT.html'>SET</a><br></td>
+    <td>Ending frame of the clip.</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_CONTROL</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_CONTROL.html'>CONTINUE</a><br><a href='propCVClipInChannel_PENDING.CLIP_CONTROL.html'>FLUSH</a><br><a href='propCVClipInChannel_PENDING.CLIP_CONTROL.html'>PAUSE</a><br><a href='propCVClipInChannel_PENDING.CLIP_CONTROL.html'>PLAY</a><br><a href='propCVClipInChannel_PENDING.CLIP_CONTROL.html'>STOP</a><br><a href='propCVClipInChannel_PENDING.CLIP_CONTROL.html'>SWAP</a><br><a href='propCVClipInChannel_PENDING.CLIP_CONTROL.html'>SWAP_EOF</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_CUE</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_CUE.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_CUE.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_IN</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_IN.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_IN.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_LOOP_MODE</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_LOOP_MODE.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_LOOP_MODE.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_NAME</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_NAME.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_NAME.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_OUT</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_OUT.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_OUT.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_REPEAT_MODE</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_REPEAT_MODE.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_REPEAT_MODE.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_REVERSE_FIELDS</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_REVERSE_FIELDS.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_REVERSE_FIELDS.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_SPEED</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_SPEED.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_SPEED.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CLIP_UPSCALE_LUMA</th>
+    <td><a href='propCVClipInChannel_PENDING.CLIP_UPSCALE_LUMA.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CLIP_UPSCALE_LUMA.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>PENDING*CONTROL</th>
+    <td><a href='propCVClipInChannel_PENDING.CONTROL.html'>CONTINUE</a><br><a href='propCVClipInChannel_PENDING.CONTROL.html'>FLUSH</a><br><a href='propCVClipInChannel_PENDING.CONTROL.html'>PAUSE</a><br><a href='propCVClipInChannel_PENDING.CONTROL.html'>PLAY</a><br><a href='propCVClipInChannel_PENDING.CONTROL.html'>STOP</a><br><a href='propCVClipInChannel_PENDING.CONTROL.html'>SWAP</a><br><a href='propCVClipInChannel_PENDING.CONTROL.html'>SWAP_EOF</a><br></td>
+    <td>Controls the pending clip player.</td>
+  </tr>
+  <tr>
+    <th>PENDING*CUE</th>
+    <td><a href='propCVClipInChannel_PENDING.CUE.html'>GET</a><br><a href='propCVClipInChannel_PENDING.CUE.html'>SET</a><br></td>
+    <td>Actual pending clip position</td>
+  </tr>
+  <tr>
+    <th>PENDING*IN</th>
+    <td><a href='propCVClipInChannel_PENDING.IN.html'>GET</a><br><a href='propCVClipInChannel_PENDING.IN.html'>SET</a><br></td>
+    <td>Starting frame of the pending clip.</td>
+  </tr>
+  <tr>
+    <th>PENDING*INOUT</th>
+    <td><a href='propCVClipInChannel_PENDING.INOUT.html'>GET</a><br><a href='propCVClipInChannel_PENDING.INOUT.html'>SET</a><br></td>
+    <td>Starting and ending frame of the pending clip.</td>
+  </tr>
+  <tr>
+    <th>PENDING*LOOP_MODE</th>
+    <td><a href='propCVClipInChannel_PENDING.LOOP_MODE.html'>GET</a><br><a href='propCVClipInChannel_PENDING.LOOP_MODE.html'>SET</a><br></td>
+    <td>Get and set the pending clip player loop back mode (true means the clip restarts to play at it's end).</td>
+  </tr>
+  <tr>
+    <th>PENDING*NAME</th>
+    <td><a href='propCVClipInChannel_PENDING.NAME.html'>GET</a><br><a href='propCVClipInChannel_PENDING.NAME.html'>SET</a><br></td>
+    <td>Loads a clip into the pending clip player.</td>
+  </tr>
+  <tr>
+    <th>PENDING*OUT</th>
+    <td><a href='propCVClipInChannel_PENDING.OUT.html'>GET</a><br><a href='propCVClipInChannel_PENDING.OUT.html'>SET</a><br></td>
+    <td>Ending frame of the pending clip.</td>
+  </tr>
+  <tr>
+    <th>PENDING*QUEUE</th>
+    <td><a href='propCVClipInChannel_PENDING.QUEUE.html'>DELETE</a><br><a href='propCVClipInChannel_PENDING.QUEUE.html'>FLUSH</a><br><a href='propCVClipInChannel_PENDING.QUEUE.html'>INSERT</a><br><a href='propCVClipInChannel_PENDING.QUEUE.html'>LIST</a><br><a href='propCVClipInChannel_PENDING.QUEUE.html'>MOVE</a><br><a href='propCVClipInChannel_PENDING.QUEUE.html'>REPLACE</a><br></td>
+    <td>Controls the pending clip queue.</td>
+  </tr>
+  <tr>
+    <th>PENDING*REPEAT_MODE</th>
+    <td><a href='propCVClipInChannel_PENDING.REPEAT_MODE.html'>GET</a><br><a href='propCVClipInChannel_PENDING.REPEAT_MODE.html'>SET</a><br></td>
+    <td>Get and set the repeat mode.  When the pending clip player is paused or the frame could not be delivered in time, the last field/frame played will be repeated. This mode determines how the repeating should be done.</td>
+  </tr>
+  <tr>
+    <th>PENDING*REVERSE_FIELDS</th>
+    <td><a href='propCVClipInChannel_PENDING.REVERSE_FIELDS.html'>GET</a><br><a href='propCVClipInChannel_PENDING.REVERSE_FIELDS.html'>SET</a><br></td>
+    <td>Get and set the reverse fields mode.  When reverse fields mode is on and the playback speed is negative, the first and second fields will be swapped to get a smoother animation.</td>
+  </tr>
+  <tr>
+    <th>PENDING*SPEED</th>
+    <td><a href='propCVClipInChannel_PENDING.SPEED.html'>GET</a><br><a href='propCVClipInChannel_PENDING.SPEED.html'>SET</a><br></td>
+    <td>Get and set the pending clip player playback speed (1.0 is normal speed).</td>
+  </tr>
+  <tr>
+    <th>PENDING*SUPPORT</th>
+    <td><a href='propCVClipInChannel_PENDING.SUPPORT.html'>GET</a><br></td>
+    <td>Checks whether pending clips are supported or not.</td>
+  </tr>
+  <tr>
+    <th>PENDING*UPSCALE_LUMA</th>
+    <td><a href='propCVClipInChannel_PENDING.UPSCALE_LUMA.html'>GET</a><br><a href='propCVClipInChannel_PENDING.UPSCALE_LUMA.html'>SET</a><br></td>
+    <td>Get and set the upscale luma mode.  Key values in .dv files normally range from 16-235.  Turning on upscale luma for clips expands these values to 0-255.</td>
+  </tr>
+  <tr>
+    <th>POSITION</th>
+    <td><a href='propCVClipInChannel_POSITION.html'>GET</a><br></td>
+    <td>The current frame number inside the clip</td>
+  </tr>
+  <tr>
+    <th>QUEUE</th>
+    <td><a href='propCVClipInChannel_QUEUE.html'>DELETE</a><br><a href='propCVClipInChannel_QUEUE.html'>FLUSH</a><br><a href='propCVClipInChannel_QUEUE.html'>INSERT</a><br><a href='propCVClipInChannel_QUEUE.html'>LIST</a><br><a href='propCVClipInChannel_QUEUE.html'>MOVE</a><br><a href='propCVClipInChannel_QUEUE.html'>REPLACE</a><br></td>
+    <td>Controls the clip queue.</td>
+  </tr>
+  <tr>
+    <th>REPEAT_MODE</th>
+    <td><a href='propCVClipInChannel_REPEAT_MODE.html'>GET</a><br><a href='propCVClipInChannel_REPEAT_MODE.html'>SET</a><br></td>
+    <td>Get and set the repeat mode.  When the clip player is paused or the frame could not be delivered in time, the last field/frame played will be repeated.  This mode determines how the repeating should be done.</td>
+  </tr>
+  <tr>
+    <th>REVERSE_FIELDS</th>
+    <td><a href='propCVClipInChannel_REVERSE_FIELDS.html'>GET</a><br><a href='propCVClipInChannel_REVERSE_FIELDS.html'>SET</a><br></td>
+    <td>Get and set the reverse fields mode.  When reverse fields mode is on and the playback speed is negative, the first and second fields will be swapped to get a smoother animation.</td>
+  </tr>
+  <tr>
+    <th>SPEED</th>
+    <td><a href='propCVClipInChannel_SPEED.html'>GET</a><br><a href='propCVClipInChannel_SPEED.html'>SET</a><br></td>
+    <td>Get and set the clip playback speed (1.0 is normal speed).</td>
+  </tr>
+  <tr>
+    <th>STATUS</th>
+    <td><a href='propCVClipInChannel_STATUS.html'>GET</a><br></td>
+    <td>The status of the clip channel.</td>
+  </tr>
+  <tr>
+    <th>UPSCALE_LUMA</th>
+    <td><a href='propCVClipInChannel_UPSCALE_LUMA.html'>GET</a><br><a href='propCVClipInChannel_UPSCALE_LUMA.html'>SET</a><br></td>
+    <td>Get and set the upscale luma mode.  Key values in .dv files normally range from 16-235.  Turning on upscale luma for clips expands these values to 0-255.</td>
+  </tr>
+</table>
+</body></html>

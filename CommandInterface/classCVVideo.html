@@ -1,0 +1,139 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVVideo</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+</table>
+<p>-</p>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>BACKGROUND_GRAPHICS_TARGET</th>
+    <td>GET<br><a href='propCVVideo_BACKGROUND_GRAPHICS_TARGET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVClipInChannel.html'>CLIPIN*%1</a></th>
+    <td></td>
+    <td>Clip-in channels available</td>
+  </tr>
+  <tr>
+    <th>CLIPIN*CONTROL</th>
+    <td><a href='propCVVideo_CLIPIN.CONTROL.html'>SWAP</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVClipOutChannel.html'>CLIPOUT*%1</a></th>
+    <td></td>
+    <td>Clip-out channels available</td>
+  </tr>
+  <tr>
+    <th>CONTROL</th>
+    <td><a href='propCVVideo_CONTROL.html'>CONTINUE</a><br><a href='propCVVideo_CONTROL.html'>STOP</a><br></td>
+    <td>Control capturing fields/frames on the live and clip inputs; ATTENTION: Currently this command only makes sense on installations with Matrox and Nvidia SDI output since this commands also influence the matrox output.</td>
+  </tr>
+  <tr>
+    <th>FOREGROUND_GRAPHICS_PRIORITY</th>
+    <td>GET<br><a href='propCVVideo_FOREGROUND_GRAPHICS_PRIORITY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FOREGROUND_GRAPHICS_TARGET</th>
+    <td>GET<br><a href='propCVVideo_FOREGROUND_GRAPHICS_TARGET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GENLOCK_STATUS</th>
+    <td><a href='propCVVideo_GENLOCK_STATUS.html'>GET</a><br></td>
+    <td>Status of the genlock.</td>
+  </tr>
+  <tr>
+    <th>GLOBAL*GFX_OUT_CHANNEL</th>
+    <td><a href='propCVVideo_GLOBAL.GFX_OUT_CHANNEL.html'>GET</a><br><a href='propCVVideo_GLOBAL.GFX_OUT_CHANNEL.html'>LIST</a><br><a href='propCVVideo_GLOBAL.GFX_OUT_CHANNEL.html'>SET</a><br></td>
+    <td>Gfx Channel that should be played out.</td>
+  </tr>
+  <tr>
+    <th>GLOBAL*SHOW_INPUT_CHANNELS</th>
+    <td>GET<br><a href='propCVVideo_GLOBAL.SHOW_INPUT_CHANNELS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL*SHOW_TARGA_CHANNELS</th>
+    <td>GET<br><a href='propCVVideo_GLOBAL.SHOW_TARGA_CHANNELS.html'>SET</a><br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>GLOBAL*VBI_CHANNEL</th>
+    <td><a href='propCVVideo_GLOBAL.VBI_CHANNEL.html'>GET</a><br><a href='propCVVideo_GLOBAL.VBI_CHANNEL.html'>LIST</a><br><a href='propCVVideo_GLOBAL.VBI_CHANNEL.html'>SET</a><br></td>
+    <td>vbi source for VizEngine.</td>
+  </tr>
+  <tr>
+    <th>LINEIN_CHANNEL_VOLUME</th>
+    <td><a href='propCVVideo_LINEIN_CHANNEL_VOLUME.html'>GET</a><br><a href='propCVVideo_LINEIN_CHANNEL_VOLUME.html'>SET</a><br></td>
+    <td>If the inline video and audio mixers are activated, this is the volume of the given channel of the line-in audio in percent.</td>
+  </tr>
+  <tr>
+    <th>LINEIN_MASTER_VOLUME</th>
+    <td>GET<br><a href='propCVVideo_LINEIN_MASTER_VOLUME.html'>SET</a><br></td>
+    <td>If the inline video and audio mixers are activated, this is the master volume of the line-in audio in percent.</td>
+  </tr>
+  <tr>
+    <th>NDICHANNELS</th>
+    <td><a href='propCVVideo_NDICHANNELS.html'>LIST</a><br><a href='propCVVideo_NDICHANNELS.html'>UPDATE</a><br></td>
+    <td>NDI sources.</td>
+  </tr>
+  <tr>
+    <th>NO_CLIPIN_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NO_CLIPOUT_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NO_DVE_TARGETS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NO_STREAMIN_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NO_VIDEOIN_CHANNELS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NUMBER_TARGA_TARGETS</th>
+    <td>GET<br></td>
+    <td>Deprecated</td>
+  </tr>
+  <tr>
+    <th>SNAPSHOT</th>
+    <td><a href='propCVVideo_SNAPSHOT.html'>CREATE</a><br></td>
+    <td>snapshot of the video output after the compositor</td>
+  </tr>
+  <tr>
+    <th><a href='classCVStreamInChannel.html'>STREAMIN*%1</a></th>
+    <td></td>
+    <td>Stream-in channels available</td>
+  </tr>
+  <tr>
+    <th><a href='classCVStreamOutChannel.html'>STREAMOUT*%1</a></th>
+    <td></td>
+    <td>Stream-out channels available</td>
+  </tr>
+  <tr>
+    <th><a href='classCVVideoInChannel.html'>VIDEOIN*%1</a></th>
+    <td></td>
+    <td>Video-in channels available</td>
+  </tr>
+</table>
+</body></html>

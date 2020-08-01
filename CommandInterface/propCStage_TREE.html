@@ -1,0 +1,96 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>TREE</h1>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD_DIRECTOR</th>
+    <td><i>String</i>&nbsp;name<br><i>Int</i>&nbsp;dest_index<br><i>Enum</i>&nbsp; = UNDER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>insert a new director into the tree</td>
+  </tr>
+  <tr>
+    <th>ADD_SELECT_ENTRY</th>
+    <td><i>Int</i>&nbsp;index<br><i>Int</i>&nbsp;last_index = -1<br>    </td>    <td>called whenever the user selects an additional entry or range of entries</td>
+  </tr>
+  <tr>
+    <th>CLOSE_ENTRY</th>
+    <td><i>Int</i>&nbsp;index<br>    </td>    <td>open tree entry</td>
+  </tr>
+  <tr>
+    <th>COPY_ENTRIES</th>
+    <td><i>String</i>&nbsp;source_indices<br><i>Int</i>&nbsp;dest_index<br><i>Enum</i>&nbsp; = UNDER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>copy tree entries within the director tree</td>
+  </tr>
+  <tr>
+    <th>COPY_ENTRY</th>
+    <td><i>Int</i>&nbsp;source_index<br><i>Int</i>&nbsp;dest_index<br><i>Enum</i>&nbsp; = UNDER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>move a tree entry within the director tree</td>
+  </tr>
+  <tr>
+    <th>DELETE_ENTRIES</th>
+    <td><i>unknown</i>&nbsp;index<br>    </td>    <td>delete a set of tree entries</td>
+  </tr>
+  <tr>
+    <th>DELETE_ENTRY</th>
+    <td><i>Int</i>&nbsp;index<br>    </td>    <td>delete a tree entry</td>
+  </tr>
+  <tr>
+    <th>GET_POPUP_INFO</th>
+    <td><i>Int</i>&nbsp;index<br>    </td>    <td>called whenever the user right-clicks on an entry</td>
+  </tr>
+  <tr>
+    <th>GROUP_DIRECTORS</th>
+    <td><i>unknown</i>&nbsp;<unknown><br>    </td>    <td>Groups the specified director into a new common parent director.</td>
+  </tr>
+  <tr>
+    <th>MOVE_CONTAINER_SELECTION</th>
+    <td><i>Enum</i>&nbsp;<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+<br>    </td>    <td>selects the next or previous entry animating the same object as the one currently selected</td>
+  </tr>
+  <tr>
+    <th>MOVE_ENTRIES</th>
+    <td><i>String</i>&nbsp;source_indices<br><i>Int</i>&nbsp;dest_index<br><i>Enum</i>&nbsp; = UNDER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>move tree entries within the director tree</td>
+  </tr>
+  <tr>
+    <th>MOVE_ENTRY</th>
+    <td><i>Int</i>&nbsp;source_index<br><i>Int</i>&nbsp;dest_index<br><i>Enum</i>&nbsp; = UNDER<br>
+      &nbsp;&nbsp;AFTER<br>
+      &nbsp;&nbsp;BEFORE<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>move a tree entry within the director tree</td>
+  </tr>
+  <tr>
+    <th>OPEN_ENTRY</th>
+    <td><i>Int</i>&nbsp;index<br>    </td>    <td>open tree entry</td>
+  </tr>
+  <tr>
+    <th>OPEN_TREE</th>
+    <td><i>Int</i>&nbsp;index<br>    </td>    <td>open tree recursively</td>
+  </tr>
+  <tr>
+    <th>SELECT_ENTRY</th>
+    <td><i>Int</i>&nbsp;index<br><i>Bool</i>&nbsp;select/unselect = 1<br>    </td>    <td>called whenever the user selects or unselects an entry</td>
+  </tr>
+  <tr>
+    <th>UNGROUP_DIRECTORS</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>When triggered in a director with children, ungroups children by moving them up in hierarchy.</td>
+  </tr>
+</table>
+</body></html>

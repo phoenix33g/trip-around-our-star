@@ -1,0 +1,35 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>PENDING*QUEUE</h1>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>DELETE</th>
+    <td><i>Int</i>&nbsp;<br>    </td>    <td>Deletes the clip at a given position.</td>
+  </tr>
+  <tr>
+    <th>FLUSH</th>
+    <td>-</td>
+    <td>Remove the clip(s) from the playlist.</td>
+  </tr>
+  <tr>
+    <th>INSERT</th>
+    <td><i>FileName</i>&nbsp;ClipName = <br><i>String</i>&nbsp;In = ""<br><i>String</i>&nbsp;Out = ""<br><i>Int</i>&nbsp;Position = -1<br><i>Int</i>&nbsp;Loopcount = 0<br><i>String</i>&nbsp;LoopIn = ""<br><i>String</i>&nbsp;LoopOut = ""<br>    </td>    <td>Inserts the clip at a given position.</td>
+  </tr>
+  <tr>
+    <th>LIST</th>
+    <td>-</td>
+    <td>Lists all the clips currently cued.</td>
+  </tr>
+  <tr>
+    <th>MOVE</th>
+    <td><i>Int</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>Moves the clip at one position to another position.</td>
+  </tr>
+  <tr>
+    <th>REPLACE</th>
+    <td><i>FileName</i>&nbsp;ClipName = <br><i>String</i>&nbsp;In = ""<br><i>String</i>&nbsp;Out = ""<br><i>Int</i>&nbsp;Position = -1<br>    </td>    <td>Replaces the clip at a given position with the new one.</td>
+  </tr>
+</table>
+</body></html>

@@ -1,0 +1,77 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVVizCommunication</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>DUMP_SMM</th>
+    <td>-</td>
+    <td>Dump memory map</td>
+  </tr>
+  <tr>
+    <th>DUMP_SMM_TOFILE</th>
+    <td><i>String</i>&nbsp;<br>    </td>    <td>Dump memory map to file</td>
+  </tr>
+  <tr>
+    <th>RESTART_SMM_SERVICE</th>
+    <td><i>Enum</i>&nbsp;input type<br>
+      &nbsp;&nbsp;MULTICAST<br>
+      &nbsp;&nbsp;TCP<br>
+      &nbsp;&nbsp;UDP<br>
+<br>    </td>    <td>Closes the open socket (if any) and restarts the listener. Possible arguments: TCP, UDP, MULTICAST</td>
+  </tr>
+  <tr>
+    <th>SYNCHRONIZE_SMMTCP</th>
+    <td><i>String</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>Synchronized shared memory to a specific engine and port via smm tcp</td>
+  </tr>
+  <tr>
+    <th>SYNCHRONIZE_TO</th>
+    <td><i>String</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>Synchronized shared memory to a specific engine and port</td>
+  </tr>
+  <tr>
+    <th>SYNCHRONIZE_UDP</th>
+    <td><i>String</i>&nbsp;<br><i>Int</i>&nbsp;<br>    </td>    <td>Synchronized shared memory to a specific engine and port via udp</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>CLUSTER_SYNC*VERBOSE_MODE</th>
+    <td>GET<br><a href='propCVVizCommunication_CLUSTER_SYNC.VERBOSE_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GPI_INFO</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GPI_PIN_COMMAND</th>
+    <td><a href='propCVVizCommunication_GPI_PIN_COMMAND.html'>CLEAR</a><br><a href='propCVVizCommunication_GPI_PIN_COMMAND.html'>SET</a><br><a href='propCVVizCommunication_GPI_PIN_COMMAND.html'>TEST</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GPO_BIT</th>
+    <td><a href='propCVVizCommunication_GPO_BIT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVSharedMemoryMap.html'>MAP</a></th>
+    <td></td>
+    <td>Accesses the distributed shared memory map (used by scripts and plugins).</td>
+  </tr>
+  <tr>
+    <th><a href='classCVMouseOverIP.html'>MOUSE_OVER_IP</a></th>
+    <td></td>
+    <td>Access the MouseOverIP object</td>
+  </tr>
+  <tr>
+    <th><a href='classRestHandler.html'>WEBSERVICE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

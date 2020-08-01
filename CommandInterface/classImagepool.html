@@ -1,0 +1,59 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>Imagepool</h1>
+<p>Inherits: <a href='classPool.html'>Pool</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>COMBINE</th>
+    <td><i>String</i>&nbsp;location<br><i>String</i>&nbsp;location.source1<br><i>String</i>&nbsp;location.source2<br>    </td>    <td>Combine to images into one</td>
+  </tr>
+  <tr>
+    <th>EXPORT</th>
+    <td><i>String</i>&nbsp;location<br><i>FileName</i>&nbsp;filename<br><i>String</i>&nbsp;format<br>    </td>    <td>Export an image into a file</td>
+  </tr>
+  <tr>
+    <th>FILE_EXISTS</th>
+    <td><i>FileName</i>&nbsp;filename<br>    </td>    <td>Returns 1 if the specified file already exists.</td>
+  </tr>
+  <tr>
+    <th>GET_BUILT_IN</th>
+    <td>-</td>
+    <td>Get the possible video sources</td>
+  </tr>
+  <tr>
+    <th>GET_BUILT_IN_GROUPS</th>
+    <td>-</td>
+    <td>Returns the group types</td>
+  </tr>
+  <tr>
+    <th>IMPORT</th>
+    <td><i>String</i>&nbsp;location<br><i>String</i>&nbsp;saveName<br><i>FileName</i>&nbsp;file<br><i>Enum</i>&nbsp; = NONE<br>
+      &nbsp;&nbsp;DXT1<br>
+      &nbsp;&nbsp;DXT3<br>
+      &nbsp;&nbsp;DXT5<br>
+      &nbsp;&nbsp;DXTSMART<br>
+      &nbsp;&nbsp;NONE<br>
+<br>    </td>    <td>Import an image</td>
+  </tr>
+  <tr>
+    <th>PREVIEW</th>
+    <td><i>FileName</i>&nbsp;filename<br>    </td>    <td>Create a small icon of a not imported image</td>
+  </tr>
+  <tr>
+    <th>SNAPSHOT</th>
+    <td><i>String</i>&nbsp;location<br><i>Enum</i>&nbsp; = RGBA<br>
+      &nbsp;&nbsp;BGR<br>
+      &nbsp;&nbsp;BGRA<br>
+      &nbsp;&nbsp;RGB<br>
+      &nbsp;&nbsp;RGBA<br>
+<br><i>Int</i>&nbsp; = -1<br><i>Int</i>&nbsp; = -1<br>    </td>    <td>Create a snapshot of the rendered output</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+</table>
+<p>-</p>
+</body></html>

@@ -1,0 +1,721 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVChannel</h1>
+<p>Inherits: <a href='classCAnimBase.html'>CAnimBase</a></p>
+<p>Derived classes: <a href='classCVClipInChannel.html'>CVClipInChannel</a>, <a href='classCVClipOutChannel.html'>CVClipOutChannel</a>, <a href='classCVGfxChannel.html'>CVGfxChannel</a>, <a href='classCVImageChannel.html'>CVImageChannel</a>, <a href='classCVStreamInChannel.html'>CVStreamInChannel</a>, <a href='classCVStreamOutChannel.html'>CVStreamOutChannel</a>, <a href='classCVSuperChannel.html'>CVSuperChannel</a>, <a href='classCVVideoInChannel.html'>CVVideoInChannel</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>CLEAR_LUMLOOKUP</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLEAR_UVLOOKUP</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FREEZE</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SAVE_LUMLOOKUP</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SAVE_UVLOOKUP</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TAKE_SNAPSHOT</th>
+    <td><i>Enum</i>&nbsp;target = DB<br>
+      &nbsp;&nbsp;DB<br>
+      &nbsp;&nbsp;FILE<br>
+<br><i>String</i>&nbsp;path = ""<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>UNFREEZE</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>A_CHANNEL*%1</th>
+    <td>GET<br><a href='propCVChannel_A_CHANNEL.%1.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ACTIVE</th>
+    <td>GET<br><a href='propCVChannel_ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ALPHA</th>
+    <td>GET<br><a href='propCVChannel_ALPHA.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ALPHA*TRACK*ACTIVE</th>
+    <td>GET<br><a href='propCVChannel_ALPHA.TRACK.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ALPHA*TRACK*OBJECT</th>
+    <td>GET<br><a href='propCVChannel_ALPHA.TRACK.OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>AUDIO_VOLUME</th>
+    <td>GET<br><a href='propCVChannel_AUDIO_VOLUME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>AUX_OUTPUT</th>
+    <td>GET<br><a href='propCVChannel_AUX_OUTPUT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BBOX*TRACK*ACTIVE</th>
+    <td>GET<br><a href='propCVChannel_BBOX.TRACK.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BBOX*TRACK*OBJECT</th>
+    <td>GET<br><a href='propCVChannel_BBOX.TRACK.OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CENTER_X</th>
+    <td><a href='propCVChannel_CENTER_X.html'>GET</a><br><a href='propCVChannel_CENTER_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CENTER_X_SCREEN</th>
+    <td><a href='propCVChannel_CENTER_X_SCREEN.html'>GET</a><br><a href='propCVChannel_CENTER_X_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CENTER_Y</th>
+    <td><a href='propCVChannel_CENTER_Y.html'>GET</a><br><a href='propCVChannel_CENTER_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CENTER_Y_SCREEN</th>
+    <td><a href='propCVChannel_CENTER_Y_SCREEN.html'>GET</a><br><a href='propCVChannel_CENTER_Y_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CHANNEL_NAME</th>
+    <td>GET<br><a href='propCVChannel_CHANNEL_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CHANNEL_VOLUME</th>
+    <td><a href='propCVChannel_CHANNEL_VOLUME.html'>GET</a><br><a href='propCVChannel_CHANNEL_VOLUME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*BORDER*ALPHA</th>
+    <td>GET<br><a href='propCVChannel_CONTENT.BORDER.ALPHA.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*BORDER*COLOR</th>
+    <td>GET<br><a href='propCVChannel_CONTENT.BORDER.COLOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*CENTER_X</th>
+    <td><a href='propCVChannel_CONTENT.CENTER_X.html'>GET</a><br><a href='propCVChannel_CONTENT.CENTER_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*CENTER_Y</th>
+    <td><a href='propCVChannel_CONTENT.CENTER_Y.html'>GET</a><br><a href='propCVChannel_CONTENT.CENTER_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*CROP_BOTTOM</th>
+    <td><a href='propCVChannel_CONTENT.CROP_BOTTOM.html'>GET</a><br><a href='propCVChannel_CONTENT.CROP_BOTTOM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*CROP_DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*CROP_LEFT</th>
+    <td><a href='propCVChannel_CONTENT.CROP_LEFT.html'>GET</a><br><a href='propCVChannel_CONTENT.CROP_LEFT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*CROP_RIGHT</th>
+    <td><a href='propCVChannel_CONTENT.CROP_RIGHT.html'>GET</a><br><a href='propCVChannel_CONTENT.CROP_RIGHT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*CROP_TOP</th>
+    <td><a href='propCVChannel_CONTENT.CROP_TOP.html'>GET</a><br><a href='propCVChannel_CONTENT.CROP_TOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*POS_X</th>
+    <td><a href='propCVChannel_CONTENT.POS_X.html'>GET</a><br><a href='propCVChannel_CONTENT.POS_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*POS_Y</th>
+    <td><a href='propCVChannel_CONTENT.POS_Y.html'>GET</a><br><a href='propCVChannel_CONTENT.POS_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*SIZE_X</th>
+    <td><a href='propCVChannel_CONTENT.SIZE_X.html'>GET</a><br><a href='propCVChannel_CONTENT.SIZE_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*SIZE_Y</th>
+    <td><a href='propCVChannel_CONTENT.SIZE_Y.html'>GET</a><br><a href='propCVChannel_CONTENT.SIZE_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTENT*ZOOM_MODE</th>
+    <td><a href='propCVChannel_CONTENT.ZOOM_MODE.html'>GET</a><br><a href='propCVChannel_CONTENT.ZOOM_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTROLLED_ANIMATION</th>
+    <td>GET<br><a href='propCVChannel_CONTROLLED_ANIMATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_BOTTOM</th>
+    <td><a href='propCVChannel_CROP_BOTTOM.html'>GET</a><br><a href='propCVChannel_CROP_BOTTOM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_BOTTOM_SCREEN</th>
+    <td><a href='propCVChannel_CROP_BOTTOM_SCREEN.html'>GET</a><br><a href='propCVChannel_CROP_BOTTOM_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_DATA_SCREEN</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_LEFT</th>
+    <td><a href='propCVChannel_CROP_LEFT.html'>GET</a><br><a href='propCVChannel_CROP_LEFT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_LEFT_SCREEN</th>
+    <td><a href='propCVChannel_CROP_LEFT_SCREEN.html'>GET</a><br><a href='propCVChannel_CROP_LEFT_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_RIGHT</th>
+    <td><a href='propCVChannel_CROP_RIGHT.html'>GET</a><br><a href='propCVChannel_CROP_RIGHT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_RIGHT_SCREEN</th>
+    <td><a href='propCVChannel_CROP_RIGHT_SCREEN.html'>GET</a><br><a href='propCVChannel_CROP_RIGHT_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_TOP</th>
+    <td><a href='propCVChannel_CROP_TOP.html'>GET</a><br><a href='propCVChannel_CROP_TOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CROP_TOP_SCREEN</th>
+    <td><a href='propCVChannel_CROP_TOP_SCREEN.html'>GET</a><br><a href='propCVChannel_CROP_TOP_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FORMAT</th>
+    <td>GET<br><a href='propCVChannel_FORMAT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FORWARD_TRANSFORM*ACTIVE</th>
+    <td>GET<br><a href='propCVChannel_FORWARD_TRANSFORM.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FORWARD_TRANSFORM*OBJECT</th>
+    <td>GET<br><a href='propCVChannel_FORWARD_TRANSFORM.OBJECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FROZEN</th>
+    <td>CLEAR<br>GET<br><a href='propCVChannel_FROZEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HAS_CLIP_CAPABILITY</th>
+    <td>GET<br><a href='propCVChannel_HAS_CLIP_CAPABILITY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEEP_ASPECT</th>
+    <td>GET<br><a href='propCVChannel_KEEP_ASPECT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_ADD_HIGHLIGHTS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_ADD_HIGHLIGHTS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_ADD_SHADOWS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_ADD_SHADOWS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_ADJUST</th>
+    <td>START<br>STOP<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_BACKING_PLATE_RGB</th>
+    <td>GET<br><a href='propCVChannel_KEYER_BACKING_PLATE_RGB.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_BRIGHTNESS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_BRIGHTNESS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_COLOR_CORRECTION</th>
+    <td>GET<br><a href='propCVChannel_KEYER_COLOR_CORRECTION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_COLOR_GAIN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_COLOR_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_COLOR_OFFSET</th>
+    <td>GET<br><a href='propCVChannel_KEYER_COLOR_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_CYAN_GAIN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_CYAN_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_DATABASE</th>
+    <td>GET<br>INVOKE<br><a href='propCVChannel_KEYER_DATABASE.html'>LOAD</a><br><a href='propCVChannel_KEYER_DATABASE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_DENOISE_RADIUS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_DENOISE_RADIUS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_DENOISE_SHARPEN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_DENOISE_SHARPEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_EDGE_BLUR</th>
+    <td>GET<br><a href='propCVChannel_KEYER_EDGE_BLUR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_EDGE_LIGHT_WRAP</th>
+    <td>GET<br><a href='propCVChannel_KEYER_EDGE_LIGHT_WRAP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_EDGE_WIDTH</th>
+    <td>GET<br><a href='propCVChannel_KEYER_EDGE_WIDTH.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_GRAY_POINT</th>
+    <td>GET<br><a href='propCVChannel_KEYER_GRAY_POINT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_HIGHLIGHTS_GAIN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_HIGHLIGHTS_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_HIGHLIGHTS_OFFSET</th>
+    <td>GET<br><a href='propCVChannel_KEYER_HIGHLIGHTS_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_HUE_ADJUST</th>
+    <td>GET<br><a href='propCVChannel_KEYER_HUE_ADJUST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INNER_HIGHLIGHTS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_INNER_HIGHLIGHTS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INNER_SHADOWS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_INNER_SHADOWS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INNER_UV_DIAM</th>
+    <td>GET<br><a href='propCVChannel_KEYER_INNER_UV_DIAM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_INVERT</th>
+    <td>GET<br><a href='propCVChannel_KEYER_INVERT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LUMLOOKUP_NAME</th>
+    <td>GET<br><a href='propCVChannel_KEYER_LUMLOOKUP_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV</th>
+    <td><a href='propCVChannel_KEYER_LV.html'>ACTIVATE</a><br><a href='propCVChannel_KEYER_LV.html'>INIT</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_BLUR_X</th>
+    <td>GET<br><a href='propCVChannel_KEYER_LV_BLUR_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_BLUR_Y</th>
+    <td>GET<br><a href='propCVChannel_KEYER_LV_BLUR_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_BRIGHTNESS_WEIGHT_OFFSET</th>
+    <td>GET<br><a href='propCVChannel_KEYER_LV_BRIGHTNESS_WEIGHT_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_LV_VARIANT</th>
+    <td>GET<br><a href='propCVChannel_KEYER_LV_VARIANT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_MAGENTA_GAIN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_MAGENTA_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_MATTE_SHRINK_FACTOR</th>
+    <td>GET<br><a href='propCVChannel_KEYER_MATTE_SHRINK_FACTOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_OPACITY_POINT</th>
+    <td>GET<br><a href='propCVChannel_KEYER_OPACITY_POINT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_OUTER_HIGHLIGHTS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_OUTER_HIGHLIGHTS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_OUTER_SHADOWS</th>
+    <td>GET<br><a href='propCVChannel_KEYER_OUTER_SHADOWS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_OUTER_UV_DIAM</th>
+    <td>GET<br><a href='propCVChannel_KEYER_OUTER_UV_DIAM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_PROCESS_FG_GAIN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_PROCESS_FG_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE</th>
+    <td>APPLY<br>INVOKE<br><a href='propCVChannel_KEYER_SAMPLE.html'>SET</a><br>START<br>STOP<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_HEIGHT</th>
+    <td>GET<br><a href='propCVChannel_KEYER_SAMPLE_HEIGHT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_WIDTH</th>
+    <td>GET<br><a href='propCVChannel_KEYER_SAMPLE_WIDTH.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_X</th>
+    <td>GET<br><a href='propCVChannel_KEYER_SAMPLE_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SAMPLE_Y</th>
+    <td>GET<br><a href='propCVChannel_KEYER_SAMPLE_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SATURATION_ADJUST</th>
+    <td>GET<br><a href='propCVChannel_KEYER_SATURATION_ADJUST.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SHADOWS_GAIN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_SHADOWS_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_SHADOWS_OFFSET</th>
+    <td>GET<br><a href='propCVChannel_KEYER_SHADOWS_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_STUDIO</th>
+    <td>GET<br><a href='propCVChannel_KEYER_STUDIO.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_TRANSPARENCY_POINT</th>
+    <td>GET<br><a href='propCVChannel_KEYER_TRANSPARENCY_POINT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_U</th>
+    <td>GET<br><a href='propCVChannel_KEYER_U.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_UVLOOKUP_NAME</th>
+    <td>GET<br><a href='propCVChannel_KEYER_UVLOOKUP_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_V</th>
+    <td>GET<br><a href='propCVChannel_KEYER_V.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYER_YELLOW_GAIN</th>
+    <td>GET<br><a href='propCVChannel_KEYER_YELLOW_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEYING_MODE</th>
+    <td>GET<br><a href='propCVChannel_KEYING_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MOUSE_SAMPLING</th>
+    <td>GET<br><a href='propCVChannel_MOUSE_SAMPLING.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POS_X</th>
+    <td><a href='propCVChannel_POS_X.html'>GET</a><br><a href='propCVChannel_POS_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POS_X_SCREEN</th>
+    <td><a href='propCVChannel_POS_X_SCREEN.html'>GET</a><br><a href='propCVChannel_POS_X_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POS_Y</th>
+    <td><a href='propCVChannel_POS_Y.html'>GET</a><br><a href='propCVChannel_POS_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POS_Y_SCREEN</th>
+    <td><a href='propCVChannel_POS_Y_SCREEN.html'>GET</a><br><a href='propCVChannel_POS_Y_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIMARY_CC_MASTER_GAIN</th>
+    <td>GET<br><a href='propCVChannel_PRIMARY_CC_MASTER_GAIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIMARY_CC_MASTER_GAMMA</th>
+    <td>GET<br><a href='propCVChannel_PRIMARY_CC_MASTER_GAMMA.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIMARY_CC_MASTER_LIFT</th>
+    <td>GET<br><a href='propCVChannel_PRIMARY_CC_MASTER_LIFT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIMARY_CC_MASTER_SATURATION</th>
+    <td>GET<br><a href='propCVChannel_PRIMARY_CC_MASTER_SATURATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIMARY_CC_MODE</th>
+    <td><a href='propCVChannel_PRIMARY_CC_MODE.html'>GET</a><br><a href='propCVChannel_PRIMARY_CC_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIORITY</th>
+    <td>GET<br><a href='propCVChannel_PRIORITY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_BRIGHTNESS</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_BRIGHTNESS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_DAMPING</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_DAMPING.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_EXTEND</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_EXTEND.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_KEYSCALE</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_KEYSCALE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_MODE</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_OFFSET</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_PERSONSCALE</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_PERSONSCALE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>REFLECTION_SINFACTORS</th>
+    <td>GET<br><a href='propCVChannel_REFLECTION_SINFACTORS.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>RESOLUTION</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SIZE_X</th>
+    <td><a href='propCVChannel_SIZE_X.html'>GET</a><br><a href='propCVChannel_SIZE_X.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SIZE_X_SCREEN</th>
+    <td><a href='propCVChannel_SIZE_X_SCREEN.html'>GET</a><br><a href='propCVChannel_SIZE_X_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SIZE_Y</th>
+    <td><a href='propCVChannel_SIZE_Y.html'>GET</a><br><a href='propCVChannel_SIZE_Y.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SIZE_Y_SCREEN</th>
+    <td><a href='propCVChannel_SIZE_Y_SCREEN.html'>GET</a><br><a href='propCVChannel_SIZE_Y_SCREEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_KEY_THRESHOLD</th>
+    <td>GET<br><a href='propCVChannel_SK_KEY_THRESHOLD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_LUM_THRESHOLD</th>
+    <td>GET<br><a href='propCVChannel_SK_LUM_THRESHOLD.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_MODE</th>
+    <td>GET<br><a href='propCVChannel_SK_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_SEARCH_WIDTH</th>
+    <td>GET<br><a href='propCVChannel_SK_SEARCH_WIDTH.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_SHRINK_BOTTOM</th>
+    <td>GET<br><a href='propCVChannel_SK_SHRINK_BOTTOM.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_SHRINK_LEFT</th>
+    <td>GET<br><a href='propCVChannel_SK_SHRINK_LEFT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_SHRINK_RIGHT</th>
+    <td>GET<br><a href='propCVChannel_SK_SHRINK_RIGHT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SK_SHRINK_TOP</th>
+    <td>GET<br><a href='propCVChannel_SK_SHRINK_TOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SNAPSHOT_NAME</th>
+    <td><a href='propCVChannel_SNAPSHOT_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TARGET</th>
+    <td>GET<br><a href='propCVChannel_TARGET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

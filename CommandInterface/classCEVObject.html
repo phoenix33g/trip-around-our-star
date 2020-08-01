@@ -1,0 +1,43 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CEVObject</h1>
+<p>Derived classes: <a href='classCArchive.html'>CArchive</a>, <a href='classCCfgData.html'>CCfgData</a>, <a href='classCCommandRecorder.html'>CCommandRecorder</a>, <a href='classCDebugControl.html'>CDebugControl</a>, <a href='classCDisplay.html'>CDisplay</a>, <a href='classCEditorPool.html'>CEditorPool</a>, <a href='classCFunctionManager.html'>CFunctionManager</a>, <a href='classCGlobal.html'>CGlobal</a>, <a href='classCMagicStuff.html'>CMagicStuff</a>, <a href='classCModifierManager.html'>CModifierManager</a>, <a href='classCPluginList.html'>CPluginList</a>, <a href='classCPluginManager.html'>CPluginManager</a>, <a href='classCShaderManager.html'>CShaderManager</a>, <a href='classCUndoRedo.html'>CUndoRedo</a>, <a href='classCVDBInterface.html'>CVDBInterface</a>, <a href='classCVHeap.html'>CVHeap</a>, <a href='classCVStageEvents.html'>CVStageEvents</a>, <a href='classCVVersion.html'>CVVersion</a>, <a href='classColor.html'>Color</a>, <a href='classEventPool.html'>EventPool</a>, <a href='classNew_License.html'>New_License</a>, <a href='classOBJECTBASE.html'>OBJECTBASE</a>, <a href='classOld_License.html'>Old_License</a>, <a href='classPlugin.html'>Plugin</a>, <a href='classVizOneServicesManager.html'>VizOneServicesManager</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>COMMAND_EXIST</th>
+    <td><i>String</i>&nbsp;class_or_property<br><i>String</i>&nbsp;command<br><i>String</i>&nbsp;sub-command = ""<br>    </td>    <td>Returns availability of a command in given class or property.</td>
+  </tr>
+  <tr>
+    <th>COMMAND_INFO</th>
+    <td><i>String</i>&nbsp; = ""<br><i>Enum</i>&nbsp; = ALL<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;ANIMATABLE<br>
+      &nbsp;&nbsp;COMMANDS<br>
+      &nbsp;&nbsp;ONE_LEVEL<br>
+      &nbsp;&nbsp;PROPERTIES<br>
+<br><i>UInt</i>&nbsp;line_width = 80<br><i>Enum</i>&nbsp; = DEFAULT<br>
+      &nbsp;&nbsp;DEFAULT<br>
+      &nbsp;&nbsp;NO_SPACING<br>
+      &nbsp;&nbsp;SIMPLE<br>
+      &nbsp;&nbsp;SPACING-%d<br>
+      &nbsp;&nbsp;TAB-%d<br>
+<br>    </td>    <td>Returns help on a command or location.</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>COMMANDS_XML</th>
+    <td>GET<br></td>
+    <td>Describes the command interface of this object</td>
+  </tr>
+  <tr>
+    <th>OBJECT_TYPE</th>
+    <td>GET<br></td>
+    <td>What type of object is this</td>
+  </tr>
+</table>
+</body></html>

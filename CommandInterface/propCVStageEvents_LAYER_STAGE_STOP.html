@@ -1,0 +1,33 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>LAYER_STAGE_STOP</h1>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD</th>
+    <td><i>Enum</i>&nbsp;layer = MAIN_LAYER<br>
+      &nbsp;&nbsp;BACK_LAYER<br>
+      &nbsp;&nbsp;FRONT_LAYER<br>
+      &nbsp;&nbsp;MAIN_LAYER<br>
+<br><i>String</i>&nbsp;command<br><i>Int</i>&nbsp;repeatcount<br>    </td>    <td>add a command to be executed when the animation in the layer stops. e.g. STAGE_EVENTS*LAYER_STAGE_STOP ADD MAIN_LAYER "RENDERER*VIDEO*CLIPOUT*1*CONTROL RECORD 500" -1</td>
+  </tr>
+  <tr>
+    <th>CLEAR</th>
+    <td><i>Enum</i>&nbsp;layer = MAIN_LAYER<br>
+      &nbsp;&nbsp;BACK_LAYER<br>
+      &nbsp;&nbsp;FRONT_LAYER<br>
+      &nbsp;&nbsp;MAIN_LAYER<br>
+<br>    </td>    <td>clear commands to be executed when the animation in the layer stops. e.g. STAGE_EVENTS*LAYER_STAGE_STOP CLEAR MAIN_LAYER</td>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td><i>Enum</i>&nbsp;layer = MAIN_LAYER<br>
+      &nbsp;&nbsp;BACK_LAYER<br>
+      &nbsp;&nbsp;FRONT_LAYER<br>
+      &nbsp;&nbsp;MAIN_LAYER<br>
+<br>    </td>    <td>get commands to be executed when the animation in the layer stops. e.g. STAGE_EVENTS*LAYER_STAGE_STOP GET MAIN_LAYER</td>
+  </tr>
+</table>
+</body></html>

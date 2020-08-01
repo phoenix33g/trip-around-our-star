@@ -1,0 +1,149 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVRenderToDiskManager</h1>
+<p>Inherits: <a href='classOBJECTBASE.html'>OBJECTBASE</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>GET_BUILT_IN</th>
+    <td>-</td>
+    <td>Returns list of registered render-to-disk plugins</td>
+  </tr>
+  <tr>
+    <th>GET_BUILT_IN_GROUPS</th>
+    <td><i>Enum</i>&nbsp; = NO_VIP_NAME<br>
+      &nbsp;&nbsp;INCLUDE_VIP_NAME<br>
+      &nbsp;&nbsp;NO_VIP_NAME<br>
+<br>    </td>    <td>Returns list of registered render-to-disk plugins</td>
+  </tr>
+  <tr>
+    <th>GET_STATUS</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>RECORD</th>
+    <td><i>Enum</i>&nbsp;Overwrite existing file = INTERACTIVE<br>
+      &nbsp;&nbsp;INTERACTIVE<br>
+      &nbsp;&nbsp;INTERACTIVE_OVERWRITE<br>
+      &nbsp;&nbsp;NO_OVERWRITE<br>
+      &nbsp;&nbsp;OVERWRITE<br>
+<br><i>Int</i>&nbsp;width = -1<br><i>Int</i>&nbsp;height = -1<br>    </td>    <td>-</td>
+  </tr>
+  <tr>
+    <th>STOP</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>BACK*OFFSET</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_BACK.OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BACK*STOPPAUSE</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_BACK.STOPPAUSE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIP_NAME</th>
+    <td><a href='propCVRenderToDiskManager_CLIP_NAME.html'>EXPAND</a><br>GET<br><a href='propCVRenderToDiskManager_CLIP_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DEVICE</th>
+    <td><a href='propCVRenderToDiskManager_DEVICE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DURATION</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_DURATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EDITOR</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_EDITOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>END</th>
+    <td><a href='propCVRenderToDiskManager_END.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRAME_FORMAT</th>
+    <td>GET<br>GET_CAPS<br><a href='propCVRenderToDiskManager_FRAME_FORMAT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRONT*OFFSET</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_FRONT.OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FRONT*STOPPAUSE</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_FRONT.STOPPAUSE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MAIN*OFFSET</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_MAIN.OFFSET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MAIN*STOPPAUSE</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_MAIN.STOPPAUSE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NAME</th>
+    <td><a href='propCVRenderToDiskManager_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PIXEL_FORMAT</th>
+    <td>GET<br>GET_CAPS<br><a href='propCVRenderToDiskManager_PIXEL_FORMAT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PLUGIN</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_PLUGIN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVRenderToDiskPluginInstance.html'>PLUGIN_INSTANCE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>RESOLUTION</th>
+    <td>GET<br><a href='propCVRenderToDiskManager_RESOLUTION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>START</th>
+    <td><a href='propCVRenderToDiskManager_START.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TEMPLATE</th>
+    <td><a href='propCVRenderToDiskManager_TEMPLATE.html'>DELETE</a><br><a href='propCVRenderToDiskManager_TEMPLATE.html'>EXISTS</a><br>GET_CURRENT<br>LIST<br><a href='propCVRenderToDiskManager_TEMPLATE.html'>LOAD</a><br><a href='propCVRenderToDiskManager_TEMPLATE.html'>RENAME</a><br><a href='propCVRenderToDiskManager_TEMPLATE.html'>SAVE</a><br><a href='propCVRenderToDiskManager_TEMPLATE.html'>SAVE_AS</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TEMPLATE*LIST</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

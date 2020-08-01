@@ -1,0 +1,499 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CONTAINER</h1>
+<p>Inherits: <a href='classCAnimContainer.html'>CAnimContainer</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD</th>
+    <td><i>Enum</i>&nbsp;where = BOTTOM<br>
+      &nbsp;&nbsp;BOTTOM<br>
+      &nbsp;&nbsp;DOWN<br>
+      &nbsp;&nbsp;LEFT<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+      &nbsp;&nbsp;RIGHT<br>
+      &nbsp;&nbsp;TOP<br>
+      &nbsp;&nbsp;UP<br>
+<br>    </td>    <td>Adds a new container.</td>
+  </tr>
+  <tr>
+    <th>COPY</th>
+    <td><i>PObject</i>&nbsp;dest<br><i>Enum</i>&nbsp;where = BOTTOM<br>
+      &nbsp;&nbsp;BOTTOM<br>
+      &nbsp;&nbsp;DOWN<br>
+      &nbsp;&nbsp;LEFT<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+      &nbsp;&nbsp;RIGHT<br>
+      &nbsp;&nbsp;TOP<br>
+      &nbsp;&nbsp;UP<br>
+<br>    </td>    <td>Copies a container.</td>
+  </tr>
+  <tr>
+    <th>DELETE</th>
+    <td><i>Enum</i>&nbsp;where = CURRENT<br>
+      &nbsp;&nbsp;ALL<br>
+      &nbsp;&nbsp;CURRENT<br>
+      &nbsp;&nbsp;UNDER<br>
+<br>    </td>    <td>Deletes a container.</td>
+  </tr>
+  <tr>
+    <th>GET</th>
+    <td><i>Bool</i>&nbsp;get_details = 0<br><i>Bool</i>&nbsp;only_one_root = 0<br>    </td>    <td>Gets the subtree starting at this container.</td>
+  </tr>
+  <tr>
+    <th>MOVE</th>
+    <td><i>PObject</i>&nbsp;dest<br><i>Enum</i>&nbsp;where = BOTTOM<br>
+      &nbsp;&nbsp;BOTTOM<br>
+      &nbsp;&nbsp;DOWN<br>
+      &nbsp;&nbsp;LEFT<br>
+      &nbsp;&nbsp;NEXT<br>
+      &nbsp;&nbsp;PREVIOUS<br>
+      &nbsp;&nbsp;RIGHT<br>
+      &nbsp;&nbsp;TOP<br>
+      &nbsp;&nbsp;UP<br>
+<br>    </td>    <td>Moves a container.</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>ABSOLUTE_PATH</th>
+    <td>GET<br></td>
+    <td>Gets the tree path,</td>
+  </tr>
+  <tr>
+    <th>ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classALPHA.html'>ALPHA</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_ALPHA.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ALPHA*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_ALPHA.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ANIM_CHANNELS*ALL</th>
+    <td><a href='propCONTAINER_ANIM_CHANNELS.ALL.html'>MOVE_TO_DIRECTOR</a><br><a href='propCONTAINER_ANIM_CHANNELS.ALL.html'>MOVE_TO_DIRECTOR_HIERARCHY</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVAudio.html'>AUDIO</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_AUDIO.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>AUDIO*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_AUDIO.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>BOUNDING_BOX</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classClipperTarget.html'>CLIPPER_TARGET</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_CLIPPER_TARGET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CLIPPER_TARGET*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_CLIPPER_TARGET.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTROL_CHANNELS</th>
+    <td><a href='propCONTAINER_CONTROL_CHANNELS.html'>GROUP</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>CONTROL_FIELD</th>
+    <td><a href='propCONTAINER_CONTROL_FIELD.html'>GET_VALUE</a><br><a href='propCONTAINER_CONTROL_FIELD.html'>SET_VALUE</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>DOWN</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classEXPERT.html'>EXPERT</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_EXPERT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EXPERT*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_EXPERT.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classEXTRUSION.html'>EXTRUSION</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_EXTRUSION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EXTRUSION*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_EXTRUSION.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>FONT</th>
+    <td><a href='propCONTAINER_FONT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classFUNCTION.html'>FUNCTION</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classGEOMETRY.html'>GEOM</a></th>
+    <td><a href='propCONTAINER_GEOM.html'>AFTERSET</a><br>DELETE<br>GET<br>GET_GROUP<br><a href='propCONTAINER_GEOM.html'>GROUP</a><br><a href='propCONTAINER_GEOM.html'>MERGE</a><br><a href='propCONTAINER_GEOM.html'>SET</a><br><a href='propCONTAINER_GEOM.html'>SETBGL</a><br><a href='propCONTAINER_GEOM.html'>SPLIT</a><br><a href='propCONTAINER_GEOM.html'>UNGROUP</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GEOM*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_GEOM.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classGEOM_BASE.html'>GEOM_BASE</a></th>
+    <td></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCGlowPlugin.html'>GLOW</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_GLOW.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOW*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_GLOW.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GUI_COLOR_INDEX</th>
+    <td>GET<br><a href='propCONTAINER_GUI_COLOR_INDEX.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCHDRRenderer.html'>HDR</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_HDR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>HDR*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_HDR.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>IMAGE</th>
+    <td><a href='propCONTAINER_IMAGE.html'>SETBGL</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>IMAGE</th>
+    <td><a href='propCONTAINER_IMAGE.html'>AFTERSET</a><br><a href='propCONTAINER_IMAGE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INFO_STATE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVInfoText.html'>INFOTEXT</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_INFOTEXT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>INFOTEXT*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_INFOTEXT.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classKEY.html'>KEY</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_KEY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOCK</th>
+    <td>GET<br><a href='propCONTAINER_LOCK.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVLookAt.html'>LOOK_AT</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_LOOK_AT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOOK_AT*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_LOOK_AT.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCACHE_SOURCE.html'>MASK_SOURCE</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_MASK_SOURCE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MASK_SOURCE*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_MASK_SOURCE.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCACHE_TARGET.html'>MASK_TARGET</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_MASK_TARGET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MASK_TARGET*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_MASK_TARGET.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classMaterial.html'>MATERIAL</a></th>
+    <td><a href='propCONTAINER_MATERIAL.html'>AFTERSET</a><br><a href='propCONTAINER_MATERIAL.html'>CREATE</a><br>DELETE<br>GET<br><a href='propCONTAINER_MATERIAL.html'>SET</a><br><a href='propCONTAINER_MATERIAL.html'>SETBGL</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classMaterialAdvanced.html'>MATERIAL_ADVANCED</a></th>
+    <td>DELETE<br>DISABLE<br>ENABLE<br>GET<br>GET_ENABLED<br><a href='propCONTAINER_MATERIAL_ADVANCED.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MATERIAL_ADVANCED*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_MATERIAL_ADVANCED.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MERGED_DIRECTOR</th>
+    <td><a href='propCONTAINER_MERGED_DIRECTOR.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MODE_COPY</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MODE_DELETE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MODE_MATERIAL</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MODE_MOVE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MODE_PROPS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>MODE_TEXTURE</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NAME</th>
+    <td>GET<br><a href='propCONTAINER_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NEXT</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OPEN</th>
+    <td>GET<br><a href='propCONTAINER_OPEN.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCPerObjectLighting.html'>PER_OBJECT_LIGHTING</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_PER_OBJECT_LIGHTING.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PER_OBJECT_LIGHTING*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_PER_OBJECT_LIGHTING.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PREVIOUS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVPriority.html'>PRIORITY</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_PRIORITY.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRIORITY*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_PRIORITY.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVProjectionTarget.html'>PROJECTION_TARGET</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_PROJECTION_TARGET.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PROJECTION_TARGET*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_PROJECTION_TARGET.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVProjector.html'>PROJECTOR</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_PROJECTOR.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PROJECTOR*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_PROJECTOR.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PROPERTIES</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ROTATION_ORDER</th>
+    <td>GET<br><a href='propCONTAINER_ROTATION_ORDER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVScript.html'>SCRIPT</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_SCRIPT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SCRIPT*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_SCRIPT.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCShaderPlugin.html'>SHADER</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_SHADER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SHADER*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_SHADER.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCShadowCaster.html'>SHADOW_CASTER</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_SHADOW_CASTER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SHADOW_CASTER*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_SHADOW_CASTER.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCShadowReceiver.html'>SHADOW_RECEIVER</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_SHADOW_RECEIVER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SHADOW_RECEIVER*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_SHADOW_RECEIVER.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>STATISTICS</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVSyncProperties.html'>SYNC_PROPERTIES</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_SYNC_PROPERTIES.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SYNC_PROPERTIES*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_SYNC_PROPERTIES.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classTEXTURE.html'>TEXTURE</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_TEXTURE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TEXTURE*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_TEXTURE.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classTRANSFORMATION.html'>TRANSFORMATION</a></th>
+    <td>GET<br><a href='propCONTAINER_TRANSFORMATION.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>UP</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>UUID</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVVideoClip.html'>VIDEO_CLIP</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_VIDEO_CLIP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VIDEO_CLIP*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_VIDEO_CLIP.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCViewportTile.html'>VIEWPORT_TILE</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_VIEWPORT_TILE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>VIEWPORT_TILE*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_VIEWPORT_TILE.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCVWindowMask.html'>WINDOW_MASK</a></th>
+    <td>DELETE<br>GET<br><a href='propCONTAINER_WINDOW_MASK.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>WINDOW_MASK*ACTIVE</th>
+    <td>GET<br><a href='propCONTAINER_WINDOW_MASK.ACTIVE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

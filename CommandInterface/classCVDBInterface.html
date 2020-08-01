@@ -1,0 +1,133 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CVDBInterface</h1>
+<p>Inherits: <a href='classCEVObject.html'>CEVObject</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>CONNECT</th>
+    <td><i>String</i>&nbsp;user = "Guest"<br><i>String</i>&nbsp;server = ""<br><i>String</i>&nbsp;nameserver = ""<br><i>UInt</i>&nbsp;port = 0<br>    </td>    <td>connect to a viz-database-server</td>
+  </tr>
+  <tr>
+    <th>DIFF_FILES</th>
+    <td><i>String</i>&nbsp;uuid1<br><i>String</i>&nbsp;uuid2<br>    </td>    <td>diff two files</td>
+  </tr>
+  <tr>
+    <th>DISCONNECT</th>
+    <td>-</td>
+    <td>disconnect from viz-database-server</td>
+  </tr>
+  <tr>
+    <th>GET_DATA_CHECKSUM</th>
+    <td><i>String</i>&nbsp;uuid<br>    </td>    <td>return checksum of Data fileunit</td>
+  </tr>
+  <tr>
+    <th>ISLOCKED</th>
+    <td><i>String</i>&nbsp;uuid<br>    </td>    <td>is a database-file locked</td>
+  </tr>
+  <tr>
+    <th>LOCK</th>
+    <td><i>String</i>&nbsp;uuid<br>    </td>    <td>lock a database-file</td>
+  </tr>
+  <tr>
+    <th>RECONNECT</th>
+    <td><i>Enum</i>&nbsp; = TRY_CURRENT_FIRST<br>
+      &nbsp;&nbsp;TRY_CURRENT_FIRST<br>
+      &nbsp;&nbsp;TRY_FAILOVER_FIRST<br>
+<br>    </td>    <td>reestablish the conntection to a viz-database</td>
+  </tr>
+  <tr>
+    <th>STATUS</th>
+    <td>-</td>
+    <td>return current status</td>
+  </tr>
+  <tr>
+    <th>SYNC_CONNECTION</th>
+    <td><i>String</i>&nbsp;server = ""<br><i>String</i>&nbsp;nameserver = ""<br><i>UInt</i>&nbsp;port = 0<br>    </td>    <td>reestablish a connection to the specified server</td>
+  </tr>
+  <tr>
+    <th>UNLOCK</th>
+    <td><i>String</i>&nbsp;uuid<br>    </td>    <td>unlock a database-file</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>ACTIVE_SESSION</th>
+    <td><a href='propCVDBInterface_ACTIVE_SESSION.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>EXPIRATION_DATE</th>
+    <td><a href='propCVDBInterface_EXPIRATION_DATE.html'>SET_DAYS</a><br><a href='propCVDBInterface_EXPIRATION_DATE.html'>SET_MINUTES</a><br></td>
+    <td>Sets expiration date for a database object, the effective expiration date for the object deppends on the backend GH configuration</td>
+  </tr>
+  <tr>
+    <th>FOLDER_INFO</th>
+    <td><a href='propCVDBInterface_FOLDER_INFO.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GLOBAL_TIMEOUT</th>
+    <td><a href='propCVDBInterface_GLOBAL_TIMEOUT.html'>GET</a><br><a href='propCVDBInterface_GLOBAL_TIMEOUT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>GROUP</th>
+    <td><a href='propCVDBInterface_GROUP.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NAME</th>
+    <td><a href='propCVDBInterface_NAME.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>OPENSERVER_TIMEOUT</th>
+    <td><a href='propCVDBInterface_OPENSERVER_TIMEOUT.html'>GET</a><br><a href='propCVDBInterface_OPENSERVER_TIMEOUT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PATH</th>
+    <td><a href='propCVDBInterface_PATH.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>RESTAGENT</th>
+    <td><a href='propCVDBInterface_RESTAGENT.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>ROOT</th>
+    <td><a href='propCVDBInterface_ROOT.html'>GET</a><br><a href='propCVDBInterface_ROOT.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TRANSACTION_COUNTER</th>
+    <td><a href='propCVDBInterface_TRANSACTION_COUNTER.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TREE_NODE</th>
+    <td><a href='propCVDBInterface_TREE_NODE.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>TYPE</th>
+    <td><a href='propCVDBInterface_TYPE.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>USER</th>
+    <td><a href='propCVDBInterface_USER.html'>GET</a><br><a href='propCVDBInterface_USER.html'>PWD</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>UUID</th>
+    <td><a href='propCVDBInterface_UUID.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

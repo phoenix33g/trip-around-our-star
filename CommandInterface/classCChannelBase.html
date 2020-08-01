@@ -1,0 +1,168 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>CChannelBase</h1>
+<p>Inherits: <a href='classCControlBase.html'>CControlBase</a></p>
+<p>Derived classes: <a href='classCChannelAction.html'>CChannelAction</a>, <a href='classCChannelEvent.html'>CChannelEvent</a>, <a href='classCChannelInt.html'>CChannelInt</a>, <a href='classCChannelPos.html'>CChannelPos</a>, <a href='classCChannelRot.html'>CChannelRot</a>, <a href='classCVChannelAudioClip.html'>CVChannelAudioClip</a>, <a href='classCVChannelTarga3200Clip.html'>CVChannelTarga3200Clip</a></p>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD</th>
+    <td><i>Timecode</i>&nbsp;<unknown><br>    </td>    <td>adds a new keyframe at the specified time</td>
+  </tr>
+  <tr>
+    <th>ADD_KEYFRAME</th>
+    <td><i>String</i>&nbsp; = ""<br>    </td>    <td>adds a new keyframe at the current time</td>
+  </tr>
+  <tr>
+    <th>ADD_KEYFRAME_AT_TIME</th>
+    <td><i>Timecode</i>&nbsp;<unknown><br><i>String</i>&nbsp; = ""<br>    </td>    <td>adds a new keyframe at the specified time</td>
+  </tr>
+  <tr>
+    <th>ADD_VALUE</th>
+    <td><i>Timecode</i>&nbsp;<unknown><br><i>ArgList</i>&nbsp;<br>    </td>    <td>adds a new keyframe at the specified time with the passed value</td>
+  </tr>
+  <tr>
+    <th>DELETE</th>
+    <td>-</td>
+    <td>deletes all keyframes</td>
+  </tr>
+  <tr>
+    <th>GET_SPLINE_INFO</th>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NEXT</th>
+    <td><i>PObject</i>&nbsp;<br>    </td>    <td>returns id of next keyframe</td>
+  </tr>
+  <tr>
+    <th>PREVIOUS</th>
+    <td><i>PObject</i>&nbsp;<br>    </td>    <td>returns id of previous keyframe</td>
+  </tr>
+  <tr>
+    <th>SUB_CHANNELS_POSSIBLE</th>
+    <td>-</td>
+    <td>Returns 1 if sub channels can be created</td>
+  </tr>
+</table>
+<h2>Properties</h2>
+<table>
+  <tr>
+    <th>DATA</th>
+    <td>GET<br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCDirectorTree.html'>DIRECTOR</a></th>
+    <td></td>
+    <td>returns the director this channel belongs to</td>
+  </tr>
+  <tr>
+    <th>INTERPOLATION_MODE</th>
+    <td><a href='propCChannelBase_INTERPOLATION_MODE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>KEY</th>
+    <td><a href='propCChannelBase_KEY.html'>DELETE</a><br><a href='propCChannelBase_KEY.html'>DELETE_KEYFRAME</a><br><a href='propCChannelBase_KEY.html'>GET_ID</a><br><a href='propCChannelBase_KEY.html'>MOVE</a><br><a href='propCChannelBase_KEY.html'>SCALE</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCKeyframeBase.html'>KEY*</a></th>
+    <td></td>
+    <td>get keyframe by name</td>
+  </tr>
+  <tr>
+    <th><a href='classCKeyframeBase.html'>KEY*#</a></th>
+    <td></td>
+    <td>get keyframe by id</td>
+  </tr>
+  <tr>
+    <th><a href='classCKeyframeBase.html'>KEY*$</a></th>
+    <td></td>
+    <td>get keyframe by name</td>
+  </tr>
+  <tr>
+    <th><a href='classCKeyframeBase.html'>KEYN*%1</a></th>
+    <td></td>
+    <td>get keyframe by index</td>
+  </tr>
+  <tr>
+    <th>LOOP</th>
+    <td>GET<br><a href='propCChannelBase_LOOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOOP_COUNTER</th>
+    <td>GET<br><a href='propCChannelBase_LOOP_COUNTER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>LOOP_TYPE</th>
+    <td>GET<br><a href='propCChannelBase_LOOP_TYPE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>NAME</th>
+    <td><a href='propCChannelBase_NAME.html'>GET</a><br><a href='propCChannelBase_NAME.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POST_LOOP</th>
+    <td>GET<br><a href='propCChannelBase_POST_LOOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POST_LOOP_COUNTER</th>
+    <td>GET<br><a href='propCChannelBase_POST_LOOP_COUNTER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POST_LOOP_INFINITE</th>
+    <td>GET<br><a href='propCChannelBase_POST_LOOP_INFINITE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>POST_SWING</th>
+    <td>GET<br><a href='propCChannelBase_POST_SWING.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRE_LOOP</th>
+    <td>GET<br><a href='propCChannelBase_PRE_LOOP.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRE_LOOP_COUNTER</th>
+    <td>GET<br><a href='propCChannelBase_PRE_LOOP_COUNTER.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRE_LOOP_INFINITE</th>
+    <td>GET<br><a href='propCChannelBase_PRE_LOOP_INFINITE.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>PRE_SWING</th>
+    <td>GET<br><a href='propCChannelBase_PRE_SWING.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th><a href='classCStage.html'>STAGE</a></th>
+    <td></td>
+    <td>returns the stage</td>
+  </tr>
+  <tr>
+    <th>SUB_CHANNELS</th>
+    <td><a href='propCChannelBase_SUB_CHANNELS.html'>CREATE</a><br><a href='propCChannelBase_SUB_CHANNELS.html'>DELETE</a><br><a href='propCChannelBase_SUB_CHANNELS.html'>GET</a><br></td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>SWING</th>
+    <td>GET<br><a href='propCChannelBase_SWING.html'>SET</a><br></td>
+    <td>-</td>
+  </tr>
+</table>
+</body></html>

@@ -1,0 +1,54 @@
+<html><link rel='stylesheet' type='text/css' href='vizSend.css'/><body>
+<h1>AUTH*VIZONE</h1>
+<h2>Commands</h2>
+<table>
+  <tr>
+    <th>Command</th><th>Arguments</th><th>Info</th>
+  </tr>
+  <tr>
+    <th>ADD_USER</th>
+    <td><i>ArgList</i>&nbsp;host[:port];[realm];user[:password]<br>    </td>    <td>add host/realm/user tuple for authentication</td>
+  </tr>
+  <tr>
+    <th>CHANGE_HOST</th>
+    <td><i>String</i>&nbsp;host_info_old<br><i>String</i>&nbsp;host_info_new<br>    </td>    <td>change the given host</td>
+  </tr>
+  <tr>
+    <th>CHANGE_REALM</th>
+    <td><i>String</i>&nbsp;host_info<br><i>String</i>&nbsp;realm_info_old<br><i>String</i>&nbsp;realm_info_new<br>    </td>    <td>change the given realm for the host</td>
+  </tr>
+  <tr>
+    <th>CHANGE_USER</th>
+    <td><i>ArgList</i>&nbsp;host[:port];[realm];user[:password_old];user[:password_new]<br>    </td>    <td>change host/realm/user tuple for authentication</td>
+  </tr>
+  <tr>
+    <th>DEL_HOST</th>
+    <td><i>String</i>&nbsp;host_info<br>    </td>    <td>delete the given host</td>
+  </tr>
+  <tr>
+    <th>DEL_REALM</th>
+    <td><i>String</i>&nbsp;host_info<br><i>String</i>&nbsp;realm_info<br>    </td>    <td>delete the given realm for the host</td>
+  </tr>
+  <tr>
+    <th>DEL_USER</th>
+    <td><i>ArgList</i>&nbsp;host[:port];[realm];user[:password]<br>    </td>    <td>delete host/realm/user tuple for authentication</td>
+  </tr>
+  <tr>
+    <th>GET_AUTH_CACHE</th>
+    <td><i>String</i>&nbsp;host<br>    </td>    <td>retrieve a cached user/password pair for the given host</td>
+  </tr>
+  <tr>
+    <th>GET_HOSTS</th>
+    <td>-</td>
+    <td>retrieve a list of known hosts</td>
+  </tr>
+  <tr>
+    <th>GET_REALMS</th>
+    <td><i>String</i>&nbsp;host_info<br>    </td>    <td>retrieve a list of known realms for the given host</td>
+  </tr>
+  <tr>
+    <th>GET_USERS</th>
+    <td><i>String</i>&nbsp;host_info<br><i>String</i>&nbsp;realm_info<br>    </td>    <td>retrieve a list of known users for the given host and realm</td>
+  </tr>
+</table>
+</body></html>
